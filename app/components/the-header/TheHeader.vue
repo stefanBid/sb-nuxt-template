@@ -9,7 +9,7 @@ interface TheHeaderProps {
 
 // Dependencies
 const { lock, unlock } = useLockScroll()
-// const { t } = useI18n()
+const { t } = useI18n()
 
 // Input / Output
 const props = withDefaults(defineProps<TheHeaderProps>(), {
@@ -154,7 +154,7 @@ watch(isMdUp, (newVal) => {
         :role="open ? 'dialog' : undefined"
       >
         <div class="flex items-center justify-between px-6 py-3 border-b border-white/10">
-          <span class="ty-label text-white/70 font-semibold! u-app-soft-transition">{{ 'header.route-section' }}</span>
+          <span class="ty-label text-white/70 font-semibold! u-app-soft-transition">{{ t('header.route-section') }}</span>
         </div>
 
         <nav class="flex flex-col gap-2 p-6">
@@ -180,7 +180,7 @@ watch(isMdUp, (newVal) => {
           </template>
         </nav>
         <div class="flex items-center justify-between px-6 py-3 border-y border-white/10">
-          <span class="ty-label text-white/70 u-app-soft-transition font-semibold ">{{ 'header.settings-section' }}</span>
+          <span class="ty-label text-white/70 u-app-soft-transition font-semibold ">{{ t('header.settings-section') }}</span>
         </div>
         <div class="p-6">
           <BaseIconMenu

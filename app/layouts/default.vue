@@ -1,8 +1,22 @@
 <script setup lang="ts">
+const i18nHead = useLocaleHead({
+  dir: true,
+  seo: true,
+})
+
+useHead(() => ({
+  htmlAttrs: i18nHead.value.htmlAttrs,
+  meta: i18nHead.value.meta,
+  link: i18nHead.value.link,
+  titleTemplate: '%s Full-Stack Developer & Web Designer',
+}))
+
+const { t, setLocale, locale } = useI18n()
+const localePath = useLocalePath()
 // State
 
 const routes = computed(() => [
-
+  { name: t('nav.home'), path: localePath('index') },
 ] as Array<RouteItem>)
 
 const langs = [
@@ -13,8 +27,7 @@ const langs = [
 // Events
 
 const onChangeLang = (langCode: string) => {
-  // setLocale(langCode as 'en' | 'it')
-  console.log('Change lang to:', langCode)
+  setLocale(langCode as 'en' | 'it')
 }
 </script>
 
@@ -23,7 +36,7 @@ const onChangeLang = (langCode: string) => {
     <TheHeader
       :langs="langs"
       :routes="routes"
-      :selected-lang-id="'it'"
+      :selected-lang-id="locale"
       @change-lang="langCode => onChangeLang(langCode)"
     />
     <main class="pt-16 px-6 md:px-10">
