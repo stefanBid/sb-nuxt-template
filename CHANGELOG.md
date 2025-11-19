@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/stefanBid/sb-nuxt-template/compare/v1.1.0...v1.2.0) (2025-11-19)
+
+
+### Features
+
+* add header component ([#6](https://github.com/stefanBid/sb-nuxt-template/issues/6)) ([b334ec3](https://github.com/stefanBid/sb-nuxt-template/commit/b334ec359990a118082d806cb86822396f8f7c56))
+
 ## [1.1.0](https://github.com/stefanBid/sb-nuxt-template/compare/v1.0.0...v1.1.0) (2025-11-19)
 
 
