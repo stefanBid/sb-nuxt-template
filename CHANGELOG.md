@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/stefanBid/sb-nuxt-template/compare/v1.2.0...v1.3.0) (2025-11-19)
+
+
+### Features
+
+* add i18n settings ([#8](https://github.com/stefanBid/sb-nuxt-template/issues/8)) ([28ef183](https://github.com/stefanBid/sb-nuxt-template/commit/28ef18380ee655ffeb96cb9d31a991966d13be12))
+
 ## [1.2.0](https://github.com/stefanBid/sb-nuxt-template/compare/v1.1.0...v1.2.0) (2025-11-19)
 
 
