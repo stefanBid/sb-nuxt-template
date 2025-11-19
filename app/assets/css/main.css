@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@import "./theme.css";
+@import "./typography.css";
+@import './utilities.css';
+@import './animations.css';
+
+
+
+/* Global Styles */
+
+/* Ensure consistent box-sizing across the app */
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Include padding + border in width/height calculations */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Full height for layout consistency */
+html, body {
+  min-height: 100%;
+}
+
+/* Body base styles */
+body {
+  margin: 0; /* remove default browser margin */
+  background-color: var(--color-app-main);
+  color: var(--color-app-contrast);
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+/* Media elements default */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Text selection */
+::selection {
+  background: color-mix(in oklab, var(--color-app-contrast) 50%, #000 70%);
+  color: var(--color-app-contrast);
+}
+
+/* Scrollbar (webkit only, subtle) */
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+*::-webkit-scrollbar-thumb {
+  background: color-mix(in oklab, var(--color-app-contrast) 70%, #000 65%);
+  border: 1px solid color-mix(in oklab, var(--color-app-contrast) 70%, #000 65%);
+  border-radius: 999px;
+}
+*::-webkit-scrollbar-track {
+  background: tra
+}
+
+/* Remove text inflation on mobile Safari */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+html.sb-scroll-locked,
+html.sb-scroll-locked body {
+  overflow: hidden !important;
+}

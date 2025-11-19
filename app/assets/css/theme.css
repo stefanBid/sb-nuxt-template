@@ -1,0 +1,23 @@
+@theme {
+  /* =======================================
+     FONT FAMILIES
+     ======================================= */
+     /** Add your custom font families here **/
+     /** Example --font-sans: 'Inter', sans-serif; **/
+     --font-primary: 'Bebas Neue', sans-serif;
+     --font-secondary: 'Space Mono', monospace;
+
+  /* =======================================
+     BASE COLORS
+     ======================================= */
+     /** Add your custom base colors here **/
+     --color-app-main: #121212;
+
+
+  /* =======================================
+     ACCENTS & CONTRAST
+     ======================================= */
+     /** Add your custom accent & contrast colors here **/
+     /** Example --color-accent: #f59e0b; **/
+       --color-app-contrast: #ff6f61;
+}
