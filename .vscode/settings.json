@@ -1,0 +1,33 @@
+{
+  "editor.formatOnSave": false,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "eslint.useFlatConfig": true,
+
+  "eslint.validate": [
+    "vue",
+    "javascript",
+    "typescript"
+  ],
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  // Disable Prettier (only ESLint handles formatting)
+  "prettier.enable": false,
+
+  // ✅ Consistency: same EOL and newline behaviour as CI
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2
+}
