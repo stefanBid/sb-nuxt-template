@@ -1,0 +1,27 @@
+{
+  "announcement": {},
+  "nav": {
+    "home": "Home"
+  },
+  "meta": {
+    "home": {
+      "title": "Titolo",
+      "description": "Descrizione"
+    }
+  },
+  "header": {
+    "route-section": "Menu",
+    "settings-section": "Impostazioni"
+  },
+  "pages": {
+    "home": {}
+  },
+  "footer": {
+    "tagline": "Slogan del tuo sito",
+    "route-section": "Link Rapidi",
+    "route-fallback": "Navigazione in arrivo",
+    "contact-section": "Contatti & Social",
+    "credit-section": "© { year } Stefano Biddau - Tutti i diritti riservati.",
+    "made-with": "Progettato e sviluppato con ❤ da Stefano Biddau"
+  }
+}

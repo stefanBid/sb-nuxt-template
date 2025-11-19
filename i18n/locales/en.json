@@ -1,0 +1,27 @@
+{
+  "announcement": {},
+  "nav": {
+    "home": "Home"
+  },
+  "meta": {
+    "home": {
+      "title": "Title",
+      "description": "Description"
+    }
+  },
+  "header": {
+    "route-section": "Menu",
+    "settings-section": "Settings"
+  },
+  "pages": {
+    "home": {}
+  },
+  "footer": {
+    "tagline": "Tagline of your website",
+    "route-section": "Quick Links",
+    "route-fallback": "Navigation coming soon",
+    "contact-section": "Contact & Social",
+    "credit-section": "© { year } Stefano Biddau - All rights reserved.",
+    "made-with": "Designed and developed with ❤ by Stefano Biddau"
+  }
+}
