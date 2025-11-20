@@ -34,7 +34,7 @@ body {
   margin: 0; /* remove default browser margin */
   background-color: var(--color-app-main);
   color: var(--color-app-contrast);
-  font-family: var(--font-secondary);
+  font-family: var(--font-app-secondary);
   font-weight: 400;
   line-height: 1.5;
   text-rendering: optimizeLegibility;

@@ -3,63 +3,63 @@
 /* ======================= TYPOGRAPHY UTILITIES ======================= */
 
 @utility ty-app-hero {
-  @apply font-primary uppercase tracking-tight leading-none text-center;
+  @apply font-app-primary uppercase tracking-tight leading-none text-center;
   @apply text-6xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem];
 }
 
 @utility ty-app-impact {
-  @apply font-primary tracking-tight leading-none uppercase;
+  @apply font-app-primary tracking-tight leading-none uppercase;
   @apply text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl;
 }
 
 @utility ty-app-title {
-  @apply font-primary leading-tight;
+  @apply font-app-primary leading-tight;
   @apply text-2xl sm:text-3xl md:text-4xl;
 }
 
 /* === Title variants === */
 @utility ty-app-title-lg {
-  @apply font-primary leading-tight;
+  @apply font-app-primary leading-tight;
   @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
 }
 
 @utility ty-app-title-xl {
-  @apply font-primary leading-tight;
+  @apply font-app-primary leading-tight;
   @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl;
 }
 
 @utility ty-app-subtitle {
-  @apply font-secondary font-semibold leading-snug;
+  @apply font-app-secondary font-semibold leading-snug;
   @apply text-base sm:text-lg md:text-xl;
 }
 
 /* === Subtitle variants === */
 @utility ty-app-subtitle-lg {
-  @apply font-secondary font-semibold leading-snug;
+  @apply font-app-secondary font-semibold leading-snug;
   @apply text-lg sm:text-xl md:text-2xl;
 }
 
 @utility ty-app-subtitle-xl {
-  @apply font-secondary font-semibold leading-snug;
+  @apply font-app-secondary font-semibold leading-snug;
   @apply text-xl sm:text-2xl md:text-3xl;
 }
 
 @utility ty-app-paragraph {
-  @apply font-secondary leading-relaxed;
+  @apply font-app-secondary leading-relaxed;
   @apply text-sm sm:text-base md:text-lg;
 }
 
 @utility ty-app-label {
-  @apply font-secondary uppercase tracking-wide;
+  @apply font-app-secondary uppercase tracking-wide;
   @apply text-xs sm:text-sm;
 }
 
 @utility ty-app-btn-label {
-  @apply font-secondary font-bold uppercase tracking-wide;
+  @apply font-app-secondary font-bold uppercase tracking-wide;
   @apply text-sm sm:text-base;
 }
 
 @utility ty-app-caption {
-  @apply font-secondary italic;
+  @apply font-app-secondary italic;
   @apply text-xs sm:text-sm;
 }

@@ -2,8 +2,8 @@
   /* =======================================
      FONT FAMILIES
      ======================================= */
-  --font-primary: 'Bebas Neue', system-ui, sans-serif;
-  --font-secondary: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-app-primary: 'Bebas Neue', system-ui, sans-serif;
+  --font-app-secondary: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
   /* =======================================
      BASE COLORS
