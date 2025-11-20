@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/stefanBid/sb-nuxt-template/compare/v1.5.0...v1.5.1) (2025-11-20)
+
+
+### Bug Fixes
+
+* home page script ([#16](https://github.com/stefanBid/sb-nuxt-template/issues/16)) ([7dd275b](https://github.com/stefanBid/sb-nuxt-template/commit/7dd275b81b4ac69b618bc782cd45aee304156e4e))
+
 ## [1.5.0](https://github.com/stefanBid/sb-nuxt-template/compare/v1.4.0...v1.5.0) (2025-11-20)
 
 
