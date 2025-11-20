@@ -60,12 +60,12 @@ img, picture, video, canvas, svg {
   height: 5px;
 }
 *::-webkit-scrollbar-thumb {
-  background: color-mix(in oklab, var(--color-app-contrast) 70%, #000 65%);
-  border: 1px solid color-mix(in oklab, var(--color-app-contrast) 70%, #000 65%);
+  background: var(--color-app-muted);
+  border: 1px solid var(--color-app-muted);
   border-radius: 999px;
 }
 *::-webkit-scrollbar-track {
-  background: tra
+  background: transparent;
 }
 
 /* Remove text inflation on mobile Safari */
