@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/stefanBid/sb-nuxt-template/compare/v1.3.1...v1.4.0) (2025-11-20)
+
+
+### Features
+
+* add footer component with contact and social links ([#12](https://github.com/stefanBid/sb-nuxt-template/issues/12)) ([63a2cc9](https://github.com/stefanBid/sb-nuxt-template/commit/63a2cc92c731ada7b1910c83d8198bf4a01c8fde))
+
 ## [1.3.1](https://github.com/stefanBid/sb-nuxt-template/compare/v1.3.0...v1.3.1) (2025-11-20)
 
 
