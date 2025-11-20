@@ -1,6 +1,6 @@
 {
   "name": "sb-nuxt-template",
-  "version": "1.5.3",
+  "version": "1.6.0",
   "description": "A simple Nuxt 3 template to start your projects quickly.",
   "author": "Stefano Biddau <biddau.stefano99@gmail.com>",
   "type": "module",

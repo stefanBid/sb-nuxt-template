@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/stefanBid/sb-nuxt-template/compare/v1.5.3...v1.6.0) (2025-11-20)
+
+
+### Features
+
+* add sitemap for SEO optimization ([#22](https://github.com/stefanBid/sb-nuxt-template/issues/22)) ([a71673f](https://github.com/stefanBid/sb-nuxt-template/commit/a71673f1b21e11a53201a8fab2a0d0a900a23042))
+
 ## [1.5.3](https://github.com/stefanBid/sb-nuxt-template/compare/v1.5.2...v1.5.3) (2025-11-20)
 
 
