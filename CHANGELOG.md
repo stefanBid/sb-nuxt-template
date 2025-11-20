@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.3](https://github.com/stefanBid/sb-nuxt-template/compare/v1.5.2...v1.5.3) (2025-11-20)
+
+
+### Bug Fixes
+
+* update README with CI/CD workflows and version reset instructions ([#20](https://github.com/stefanBid/sb-nuxt-template/issues/20)) ([0eec12f](https://github.com/stefanBid/sb-nuxt-template/commit/0eec12f19de100b35fb21305c64aebf2c173e3c5))
+
 ## [1.5.2](https://github.com/stefanBid/sb-nuxt-template/compare/v1.5.1...v1.5.2) (2025-11-20)
 
 
