@@ -1,11 +1,13 @@
 {
   "announcement": {},
   "nav": {
-    "home": "Home"
+    "home": "Home",
+    "privacy-policy": "Privacy Policy",
+    "terms-and-conditions": "Terms & Conditions"
   },
   "meta": {
     "home": {
-      "title": "Title",
+      "title": "Home",
       "description": "Description"
     }
   },
@@ -21,7 +23,7 @@
     "route-section": "Quick Links",
     "route-fallback": "Navigation coming soon",
     "contact-section": "Contact & Social",
-    "credit-section": "© { year } Stefano Biddau - All rights reserved.",
+    "credit-section": "© { year } [your name] - All rights reserved.",
     "made-with": "Designed and developed with ❤ by Stefano Biddau"
   }
 }
