@@ -13,6 +13,8 @@ useHead(() => ({
 
 const { t, setLocale, locale } = useI18n()
 const localePath = useLocalePath()
+const { notifications, removeNotification, info } = useAppNotifications()
+
 // State
 
 const routes = computed(() => [
@@ -29,6 +31,23 @@ const langs = [
 const onChangeLang = (langCode: string) => {
   setLocale(langCode as 'en' | 'it')
 }
+
+const onCloseNotification = (id: string) => {
+  removeNotification(id)
+}
+
+onMounted(() => {
+  if (import.meta.client) {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+  }
+  info({
+    title: `🚀 Notification Title`,
+    message: `This is an informational notification to welcome users to the website.`,
+    autoClose: true,
+    dismissible: true,
+    duration: 10000,
+  })
+})
 </script>
 
 <template>
@@ -52,5 +71,21 @@ const onChangeLang = (langCode: string) => {
       phone="+39 123 456 7890"
       :quick-links="routes"
     />
+    <TheNotificationBox>
+      <transition-group class="flex flex-col gap-3" name="slide-down" tag="div">
+        <TheNotificationBanner
+          v-for="notification in notifications"
+          :key="notification.id"
+          :auto-close="notification.autoClose"
+          :dismissible="notification.dismissible"
+          :duration="notification.duration"
+          :icon="notification.icon"
+          :message="notification.message"
+          :title="notification.title"
+          :type="notification.type"
+          @close="onCloseNotification(notification.id)"
+        />
+      </transition-group>
+    </TheNotificationBox>
   </div>
 </template>
