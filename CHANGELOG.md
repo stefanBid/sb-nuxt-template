@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/stefanBid/sb-nuxt-template/compare/v1.3.0...v1.3.1) (2025-11-20)
+
+
+### Bug Fixes
+
+* add custom complete theme  ([#10](https://github.com/stefanBid/sb-nuxt-template/issues/10)) ([ebffe6e](https://github.com/stefanBid/sb-nuxt-template/commit/ebffe6e29824a06ba6d0d0b54ed0beb130e2a870))
+
 ## [1.3.0](https://github.com/stefanBid/sb-nuxt-template/compare/v1.2.0...v1.3.0) (2025-11-19)
 
 
