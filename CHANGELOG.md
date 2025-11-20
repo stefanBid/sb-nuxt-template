@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/stefanBid/sb-nuxt-template/compare/v1.4.0...v1.5.0) (2025-11-20)
+
+
+### Features
+
+* add notifications ([#14](https://github.com/stefanBid/sb-nuxt-template/issues/14)) ([3b220e5](https://github.com/stefanBid/sb-nuxt-template/commit/3b220e56257bdb97e98bb11b994e618569bf98c2))
+
 ## [1.4.0](https://github.com/stefanBid/sb-nuxt-template/compare/v1.3.1...v1.4.0) (2025-11-20)
 
 
