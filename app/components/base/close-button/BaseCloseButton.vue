@@ -13,7 +13,7 @@ const onClose = () => {
 
 <template>
   <button
-    class="inline-flex group items-center rounded-xl p-1 focus:outline-none focus:ring-2 focus:ring-app-accent ml-4 cursor-pointer text-app-muted hover:text-app-contrast u-app-soft-transition"
+    class="inline-flex group items-center rounded-xl p-1 ml-4 cursor-pointer text-app-muted hover:text-app-contrast u-app-soft-transition"
     @click.stop="onClose"
   >
     <Icon
