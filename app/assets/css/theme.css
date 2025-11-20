@@ -2,22 +2,25 @@
   /* =======================================
      FONT FAMILIES
      ======================================= */
-     /** Add your custom font families here **/
-     /** Example --font-sans: 'Inter', sans-serif; **/
-     --font-primary: 'Bebas Neue', sans-serif;
-     --font-secondary: 'Space Mono', monospace;
+  --font-primary: 'Bebas Neue', system-ui, sans-serif;
+  --font-secondary: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
   /* =======================================
      BASE COLORS
      ======================================= */
-     /** Add your custom base colors here **/
-     --color-app-main: #121212;
-
+  --color-app-main: #f8f9fa;          /* main background: soft warm white */
+  --color-app-surface: #ffffff;       /* elevated surface: pure white for cards */
+  --color-app-surface-2: #f1f3f5;     /* nested surface: subtle gray for nested elements */
+  --color-app-shadow: rgba(0, 0, 0, 0.08); /* soft shadow for depth */
+  --color-app-border: #dee2e6;        /* borders, outlines, dividers */
 
   /* =======================================
      ACCENTS & CONTRAST
      ======================================= */
-     /** Add your custom accent & contrast colors here **/
-     /** Example --color-accent: #f59e0b; **/
-       --color-app-contrast: #ff6f61;
+  --color-app-accent: #2563eb;        /* primary accent: vibrant blue */
+  --color-app-accent-hover: #1d4ed8;  /* darker blue for hover */
+  --color-app-accent-border: #1e40af; /* deeper blue for borders */
+  --color-app-contrast: #1a1a1a;      /* main text on light backgrounds */
+  --color-app-muted: #6c757d;         /* secondary or subdued text */
+  --color-app-error: #dc2626;         /* alert or error */
 }

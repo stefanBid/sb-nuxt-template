@@ -50,8 +50,8 @@ img, picture, video, canvas, svg {
 
 /* Text selection */
 ::selection {
-  background: color-mix(in oklab, var(--color-app-contrast) 50%, #000 70%);
-  color: var(--color-app-contrast);
+  background: var(--color-app-accent);
+  color: #ffffff;
 }
 
 /* Scrollbar (webkit only, subtle) */
