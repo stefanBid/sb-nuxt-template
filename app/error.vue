@@ -46,7 +46,7 @@ const handleBackHome = () => {
             <summary class="ty-app-label text-app-muted cursor-pointer hover:text-app-contrast u-app-soft-transition">
               Technical Details (debug)
             </summary>
-            <pre class="ty-app-caption text-app-muted bg-app-surface border border-app-border rounded p-3 mt-2 overflow-auto text-xs u-app-soft-transition">{{ JSON.stringify(props.error, null, 2) }}</pre>
+            <pre class="ty-app-caption text-app-muted bg-app-surface border border-app-border rounded-xl p-3 mt-2 overflow-auto text-xs u-app-soft-transition">{{ JSON.stringify(props.error, null, 2) }}</pre>
           </details>
 
           <p class="ty-app-paragraph text-app-muted u-app-soft-transition">
