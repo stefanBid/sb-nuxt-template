@@ -1,40 +1,46 @@
 const SCROLL_LOCK_CLASS = 'app-scroll-locked'
 
 export default function useLockScroll() {
-  // Global state to track all owners that have locked the scroll
-  const owners = useState<string[]>('scrollLockOwners', () => [])
-  const isLocked = computed(() => owners.value.length > 0)
+  // Internal State
+  const _owners = useState<string[]>('scrollLockOwners', () => [])
+  const _ownerId = ref<string | null>(null)
 
-  // Unique owner ID for this composable instance
-  const ownerId = ref<string | null>(null)
-
-  const ensureOwnerId = () => {
-    if (!ownerId.value) {
-      ownerId.value = generateUuid()
+  function _ensureOwnerId() {
+    if (!_ownerId.value) {
+      _ownerId.value = generateUuid()
     }
-    return ownerId.value
+    return _ownerId.value
   }
 
+  // State
+  const isLocked = computed(() => _owners.value.length > 0)
+
+  /**
+   * Locks the scroll for the current owner instance.
+   */
   function lock() {
     if (!import.meta.client) {
       return
     }
 
-    const id = ensureOwnerId()
+    const id = _ensureOwnerId()
 
     // avoid duplicates if lock() is called multiple times by the same owner
-    if (!owners.value.includes(id)) {
-      owners.value = [...owners.value, id]
+    if (!_owners.value.includes(id)) {
+      _owners.value = [..._owners.value, id]
     }
   }
 
+  /**
+   * Unlocks the scroll for the current owner instance.
+   */
   function unlock() {
-    if (!import.meta.client || !ownerId.value) {
+    if (!import.meta.client || !_ownerId.value) {
       return
     }
 
-    if (owners.value.includes(ownerId.value)) {
-      owners.value = owners.value.filter(id => id !== ownerId.value)
+    if (_owners.value.includes(_ownerId.value)) {
+      _owners.value = _owners.value.filter(id => id !== _ownerId.value)
     }
   }
 
