@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.4](https://github.com/stefanBid/sb-nuxt-template/compare/v1.6.3...v1.6.4) (2025-11-24)
+
+
+### Bug Fixes
+
+* update composables structure ([#30](https://github.com/stefanBid/sb-nuxt-template/issues/30)) ([07af726](https://github.com/stefanBid/sb-nuxt-template/commit/07af7260a3dd1ff7b95ed61f2576308a3827892c))
+
 ## [1.6.3](https://github.com/stefanBid/sb-nuxt-template/compare/v1.6.2...v1.6.3) (2025-11-24)
 
 
