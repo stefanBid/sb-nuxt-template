@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.3](https://github.com/stefanBid/sb-nuxt-template/compare/v1.6.2...v1.6.3) (2025-11-24)
+
+
+### Bug Fixes
+
+* uuid ssr safe ([#28](https://github.com/stefanBid/sb-nuxt-template/issues/28)) ([1197a09](https://github.com/stefanBid/sb-nuxt-template/commit/1197a09c39915d04f702b9d556c692166b2e4356))
+
 ## [1.6.2](https://github.com/stefanBid/sb-nuxt-template/compare/v1.6.1...v1.6.2) (2025-11-24)
 
 
