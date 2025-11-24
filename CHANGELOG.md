@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.2](https://github.com/stefanBid/sb-nuxt-template/compare/v1.6.1...v1.6.2) (2025-11-24)
+
+
+### Bug Fixes
+
+* enhance error page styling and add technical details for debugging ([#26](https://github.com/stefanBid/sb-nuxt-template/issues/26)) ([7025acd](https://github.com/stefanBid/sb-nuxt-template/commit/7025acd7755a849efb94e83be1c883708dd6bef1))
+
 ## [1.6.1](https://github.com/stefanBid/sb-nuxt-template/compare/v1.6.0...v1.6.1) (2025-11-24)
 
 
