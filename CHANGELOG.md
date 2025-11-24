@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.5](https://github.com/stefanBid/sb-nuxt-template/compare/v1.6.4...v1.6.5) (2025-11-24)
+
+
+### Bug Fixes
+
+* ensure notifications are SSR safe by wrapping in ClientOnly ([#32](https://github.com/stefanBid/sb-nuxt-template/issues/32)) ([26dd7d1](https://github.com/stefanBid/sb-nuxt-template/commit/26dd7d190bfb7ee6e9882222b9e35bb453217bc5))
+
 ## [1.6.4](https://github.com/stefanBid/sb-nuxt-template/compare/v1.6.3...v1.6.4) (2025-11-24)
 
 
