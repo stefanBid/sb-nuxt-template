@@ -10,12 +10,7 @@ export default function useLockScroll() {
 
   const ensureOwnerId = () => {
     if (!ownerId.value) {
-      if (typeof crypto !== 'undefined' && 'randomUUID' in crypto) {
-        ownerId.value = crypto.randomUUID()
-      }
-      else {
-        ownerId.value = `owner-${Math.random().toString(36).slice(2)}`
-      }
+      ownerId.value = generateUuid()
     }
     return ownerId.value
   }
