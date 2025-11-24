@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.1](https://github.com/stefanBid/sb-nuxt-template/compare/v1.8.0...v1.8.1) (2025-11-24)
+
+
+### Bug Fixes
+
+* UI bugs ([#40](https://github.com/stefanBid/sb-nuxt-template/issues/40)) ([62509c0](https://github.com/stefanBid/sb-nuxt-template/commit/62509c07d875631066d3d1aa1464a463dbd08b60))
+
 ## [1.8.0](https://github.com/stefanBid/sb-nuxt-template/compare/v1.7.1...v1.8.0) (2025-11-24)
 
 
