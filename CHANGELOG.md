@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.1](https://github.com/stefanBid/sb-nuxt-template/compare/v1.7.0...v1.7.1) (2025-11-24)
+
+
+### Bug Fixes
+
+* page margin and transitions ([#36](https://github.com/stefanBid/sb-nuxt-template/issues/36)) ([42f9c9f](https://github.com/stefanBid/sb-nuxt-template/commit/42f9c9f02aaa12bcbadbd18c9acfda6888253767))
+
 ## [1.7.0](https://github.com/stefanBid/sb-nuxt-template/compare/v1.6.5...v1.7.0) (2025-11-24)
 
 
