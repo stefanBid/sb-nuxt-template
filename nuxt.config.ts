@@ -27,6 +27,10 @@ export default defineNuxtConfig({
   // Server deployment preset
   nitro: {
     preset: 'netlify',
+    // Exclude isomorphic-dompurify from server bundle to avoid jsdom issues
+    externals: {
+      external: ['isomorphic-dompurify'],
+    },
   },
 
   // Vite configuration
