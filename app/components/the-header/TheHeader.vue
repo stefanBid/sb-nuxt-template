@@ -76,7 +76,11 @@ watch(isMdUp, (newVal) => {
   <div class="relative z-50">
     <!-- HEADER FIXED -->
     <header
-      class="fixed top-0 inset-x-0 h-16 border-b border-app-border u-app-soft-transition backdrop-blur supports-backdrop-filter:bg-app-main/60 bg-app-main/80"
+      class="fixed top-0 inset-x-0 h-16 border-b border-app-border u-app-soft-transition backdrop-blur"
+      :class="{
+        'bg-app-main': open,
+        'bg-app-main/80 supports-backdrop-filter:bg-app-main/60': !open,
+      }"
     >
       <div class=" h-full flex items-center max-w-[1400px] mx-auto justify-between u-app-soft-transition px-6 md:px-10">
         <NuxtLink
