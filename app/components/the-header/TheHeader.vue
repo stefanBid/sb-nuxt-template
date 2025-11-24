@@ -76,13 +76,13 @@ watch(isMdUp, (newVal) => {
   <div class="relative z-50">
     <!-- HEADER FIXED -->
     <header
-      class="fixed top-0 inset-x-0 h-16 border-b border-app-border u-app-soft-transition backdrop-blur"
+      class="fixed top-0 inset-x-0 h-16 border-b border-app-border backdrop-blur px-6 md:px-10 u-app-soft-transition"
       :class="{
         'bg-app-main': open,
         'bg-app-main/80 supports-backdrop-filter:bg-app-main/60': !open,
       }"
     >
-      <div class=" h-full flex items-center max-w-[1400px] mx-auto justify-between u-app-soft-transition px-6 md:px-10">
+      <div class=" h-full flex items-center max-w-[1400px] mx-auto justify-between">
         <NuxtLink
           class="inline-flex items-center gap-2 ty-app-title tracking-tight hover:opacity-90 u-app-focus u-app-soft-transition rounded-xl cursor-pointer"
           :to="props.routes[0]?.path || '/'"
@@ -101,7 +101,7 @@ watch(isMdUp, (newVal) => {
             <template v-for="r in routes" :key="r.path">
               <NuxtLink
                 v-if="!r.disabled"
-                class="ty-app-btn-label normal-case! cursor-pointer u-app-soft-transition u-app-focus rounded-md"
+                class="ty-app-btn-label normal-case! cursor-pointer u-app-soft-transition u-app-focus rounded-xl"
                 :class="{
                   'text-app-contrast/70 hover:text-app-contrast font-normal!': currentRoute.path !== r.path && !r.disabled,
                   'text-app-accent font-bold!': currentRoute.path === r.path && !r.disabled,
