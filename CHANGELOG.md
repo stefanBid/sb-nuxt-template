@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.2](https://github.com/stefanBid/sb-nuxt-template/compare/v1.8.1...v1.8.2) (2025-11-24)
+
+
+### Bug Fixes
+
+* change sanitizeHtml to a function declaration for consistency ([#42](https://github.com/stefanBid/sb-nuxt-template/issues/42)) ([fbee6f0](https://github.com/stefanBid/sb-nuxt-template/commit/fbee6f038b8ae76b63388c3f6281183f90baa567))
+
 ## [1.8.1](https://github.com/stefanBid/sb-nuxt-template/compare/v1.8.0...v1.8.1) (2025-11-24)
 
 
