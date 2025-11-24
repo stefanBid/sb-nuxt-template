@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/stefanBid/sb-nuxt-template/compare/v1.6.5...v1.7.0) (2025-11-24)
+
+
+### Features
+
+* add dom purification composable ([#34](https://github.com/stefanBid/sb-nuxt-template/issues/34)) ([558b43f](https://github.com/stefanBid/sb-nuxt-template/commit/558b43f7d9085ac353fc7bd6d15d56b353b9ef46))
+
 ## [1.6.5](https://github.com/stefanBid/sb-nuxt-template/compare/v1.6.4...v1.6.5) (2025-11-24)
 
 
