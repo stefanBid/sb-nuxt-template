@@ -6,7 +6,7 @@ export default function useSanitize() {
    * @param dirtyHtml
    * @returns Sanitized HTML string
    */
-  const sanitizeHtml = (dirtyHtml: string): string => {
+  function sanitizeHtml(dirtyHtml: string): string {
     // Convert newlines to <br> tags
     const withBreaks = dirtyHtml.replace(/\n/g, '<br>')
 
