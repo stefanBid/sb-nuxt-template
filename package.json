@@ -16,23 +16,23 @@
   },
   "dependencies": {
     "@floating-ui/vue": "^1.1.9",
-    "@iconify-json/circle-flags": "^1.2.10",
-    "@iconify-json/solar": "^1.2.5",
-    "@nuxt/eslint": "^1.10.0",
+    "@nuxt/eslint": "^1.11.0",
     "@nuxt/icon": "^2.1.0",
     "@nuxt/image": "^2.0.0",
     "@nuxtjs/i18n": "^10.2.1",
     "@tailwindcss/vite": "^4.1.17",
-    "@vueuse/core": "^14.0.0",
-    "@vueuse/nuxt": "^14.0.0",
+    "@vueuse/core": "^14.1.0",
+    "@vueuse/nuxt": "^14.1.0",
     "eslint": "^9.39.1",
     "isomorphic-dompurify": "^2.33.0",
     "nuxt": "^4.2.1",
     "tailwindcss": "^4.1.17",
-    "vue": "^3.5.24",
+    "vue": "^3.5.25",
     "vue-router": "^4.6.3"
   },
   "devDependencies": {
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/flagpack": "^1.2.7",
     "@types/node": "^24.10.1"
   },
   "engines": {

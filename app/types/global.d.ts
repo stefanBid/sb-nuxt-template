@@ -4,6 +4,7 @@ declare global {
   interface MenuItem {
     code: string
     label: string
+    iconType: 'nuxt-icon' | 'custom'
     icon: string
   }
 

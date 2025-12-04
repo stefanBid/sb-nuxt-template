@@ -116,7 +116,17 @@ watch(open, (newVal) => {
                 @click="onSelect(item.code)"
               >
                 <span class="truncate flex-1">{{ item.label }}</span>
-                <Icon class="size-4 shrink-0" :name="item.icon" />
+                <Icon
+                  v-if="item.iconType === 'nuxt-icon'"
+                  class="size-4 shrink-0"
+                  :name="item.icon"
+                />
+                <NuxtImg
+                  v-else-if="item.iconType === 'custom'"
+                  alt=""
+                  class="size-4 shrink-0"
+                  :src="item.icon"
+                />
               </button>
             </li>
           </ul>

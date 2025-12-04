@@ -14,7 +14,7 @@ const DEFAULT_CONFIG: FloatingConfig = {
 }
 
 export default function useFloatingUi(conf: FloatingConfig = {}) {
-  // Internal State
+  // Internal state
   const _mergedConf: FloatingConfig = {
     ...DEFAULT_CONFIG,
     ...conf,
@@ -35,10 +35,11 @@ export default function useFloatingUi(conf: FloatingConfig = {}) {
   })
 
   /**
-   * Toggles the floating element's open state.
-   * @param newFloatingState Whether the floating element should be open
+   * Toggle floating UI visibility
+   * @param newFloatingState boolean - desired floating state
+   * @returns void
    */
-  const toggleFloating = (newFloatingState: boolean) => {
+  function toggleFloating(newFloatingState: boolean) {
     if (newFloatingState === open.value) {
       return
     }

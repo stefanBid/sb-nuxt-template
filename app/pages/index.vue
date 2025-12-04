@@ -12,11 +12,6 @@ useSeoMeta({
   twitterTitle: () => t('meta.home.title'),
   twitterDescription: () => t('meta.home.description'),
 
-  // GLOBALS
-  ogImage: '/images/card-logo.jpg',
-  twitterImage: '/images/card-logo.jpg',
-  twitterCard: 'summary',
-
   // DYNAMIC BUT NOT TIED TO CONTENT LANGUAGE
   ogUrl: () => `http://localhost:3000${route.fullPath}`,
 })

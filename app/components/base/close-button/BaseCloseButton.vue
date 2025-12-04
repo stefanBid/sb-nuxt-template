@@ -18,7 +18,7 @@ const onClose = () => {
   >
     <Icon
       class="size-6 md:size-7 u-app-soft-transition"
-      name="solar:close-circle-bold-duotone"
+      name="mdi:close-box"
     />
   </button>
 </template>

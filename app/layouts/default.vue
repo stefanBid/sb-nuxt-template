@@ -22,8 +22,8 @@ const routes = computed(() => [
 ] as Array<RouteItem>)
 
 const langs = [
-  { code: 'en', label: 'English', icon: 'circle-flags:en' },
-  { code: 'it', label: 'Italiano', icon: 'circle-flags:it' },
+  { code: 'en', label: 'English', iconType: 'nuxt-icon', icon: 'flagpack:gb-ukm' },
+  { code: 'it', label: 'Italiano', iconType: 'nuxt-icon', icon: 'flagpack:it' },
 ] as Array<MenuItem>
 
 // Events

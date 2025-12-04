@@ -97,6 +97,7 @@ export default withNuxt({
     // 🧱 Vue Specific Formatting
     // ------------------------------------------------------------
     'vue/multi-word-component-names': 'off',
+    'vue/no-v-html': 'off',
 
     'vue/first-attribute-linebreak': ['warn', {
       singleline: 'ignore',
