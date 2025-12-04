@@ -121,7 +121,7 @@ watch(isMdUp, (newVal) => {
           </nav>
           <div class="ml-0 md:ml-4 hidden! md:inline-block! u-app-soft-transition ">
             <BaseIconMenu
-              :icon="'solar:globus-bold-duotone'"
+              :icon="'mdi:earth'"
               :items="props.langs"
               :selected-item-id="props.selectedLangId"
               @select="itemId => onSelectLang(itemId)"
@@ -186,7 +186,7 @@ watch(isMdUp, (newVal) => {
         </div>
         <div class="p-6">
           <BaseIconMenu
-            :icon="'solar:globus-bold-duotone'"
+            :icon="'mdi:earth'"
             :items="props.langs"
             :selected-item-id="props.selectedLangId"
             @select="itemId => onSelectLang(itemId)"

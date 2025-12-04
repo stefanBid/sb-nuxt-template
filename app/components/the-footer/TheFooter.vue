@@ -94,7 +94,7 @@ const props = withDefaults(defineProps<TheFooterProps>(), {
             v-if="props.email"
             class="ty-app-label normal-case! text-app-contrast/85 u-app-soft-transition flex items-center"
           >
-            <Icon class="size-4.5 inline-block shrink-0 mr-1.5 text-app-muted" name="solar:letter-opened-bold-duotone" />
+            <Icon class="size-4.5 inline-block shrink-0 mr-1.5 text-app-muted" name="mdi:email-edit-outline" />
             <a
               class="underline underline-offset-4 hover:text-app-accent u-app-soft-transition u-app-focus rounded"
               :href="`mailto:${props.email}`"
@@ -107,7 +107,7 @@ const props = withDefaults(defineProps<TheFooterProps>(), {
             v-if="props.phone"
             class="ty-app-label normal-case! text-app-contrast/85 u-app-soft-transition flex items-center"
           >
-            <Icon class="size-4.5 inline-block mr-1.5 shrink-0 text-app-muted" name="solar:smartphone-2-bold-duotone" />
+            <Icon class="size-4.5 inline-block mr-1.5 shrink-0 text-app-muted" name="mdi:phone-classic" />
             <a
               class="underline underline-offset-4 hover:text-app-accent u-app-soft-transition u-app-focus rounded"
               :href="`tel:${props.phone}`"
@@ -160,7 +160,7 @@ const props = withDefaults(defineProps<TheFooterProps>(), {
             target="_blank"
           >
             <span class="inline-flex items-center justify-center p-0.5 border border-app-contrast/85 rounded">
-              <Icon class="size-4" name="logos:instagram-icon" />
+              <Icon class="size-4" name="mdi:instagram" />
             </span>
             <span class="ty-app-caption text-app-contrast/85">
               Instagram
