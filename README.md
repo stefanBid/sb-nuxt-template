@@ -2,11 +2,11 @@
   <div style="background: white; padding: 20px; border-radius: 12px; display: inline-block;">
     <img src="https://stunning-confidence-0ce6b255c4.media.strapiapp.com/sb_template_nuxt_logo_cd2c1f9652.webp" alt="SB-Template Nuxt Logo" width="200">
   </div>
-  
+
   # SB-Template Nuxt
-  
+
   ### 🚀 Production-Ready Nuxt 3 Starter with Superpowers
-  
+
   ![Node.js](https://img.shields.io/badge/node-%3E%3D24.11.0-brightgreen)
   ![Vue](https://img.shields.io/badge/vue-3.5.25-4FC08D?logo=vue.js)
   ![Nuxt](https://img.shields.io/badge/nuxt-4.2.1-00DC82?logo=nuxt.js)
@@ -16,11 +16,11 @@
   ![ESLint](https://img.shields.io/badge/eslint-9.39.1-4B32C3?logo=eslint)
 
   **Stop wasting time on boilerplate. Start building features.**
-  
+
   A battle-tested, feature-rich Nuxt 3 template that includes everything you need: i18n, styling system, reusable components, and CI/CD ready to deploy.
 
   [Quick Start](#-quick-start) • [Features](#-core-features) • [Customization](#-customization) • [Deploy](#-deployment)
-  
+
 </div>
 
 ---
@@ -364,7 +364,7 @@ function showError() {
         <Icon name="mdi:menu" />
       </button>
     </template>
-    
+
     <template #content>
       <div class="p-4 bg-white rounded-lg shadow-lg">
         <a href="/profile">Profile</a>
@@ -493,7 +493,7 @@ image: {
   <!-- MDI icons -->
   <Icon name="mdi:home" size="24" />
   <Icon name="mdi:account-circle" size="32" color="blue" />
-  
+
   <!-- Flag icons -->
   <Icon name="flagpack:it" size="24" />
   <Icon name="flagpack:us" size="24" />
@@ -765,9 +765,20 @@ Feel free to use it for personal or commercial projects.
 
 ## 👤 Author
 
-**Stefano Biddau**  
-📧 Email: biddau.stefano99@gmail.com  
+**Stefano Biddau**
+📧 Email: biddau.stefano99@gmail.com
 🐙 GitHub: [@stefanoBid](https://github.com/stefanoBid)
+🌐 Website: [stefanobiddau.com](https://stefanobiddau.com)
+
+---
+
+## 🎨 More Templates
+
+Looking for more starter templates? Check out the **SB Templates Project** collection!
+
+👉 **[Browse All Templates](https://stefanobiddau.com/my-projects)**
+
+Visit the website and navigate to the **SB TEMPLATES PROJECT** section to discover more production-ready templates for different frameworks and use cases.
 
 ---
 
@@ -790,7 +801,7 @@ Your support motivates me to maintain and improve this project.
 ---
 
 <div align="center">
-  
+
 **Happy coding! 🚀**
 
 Built with ❤️ by developers, for developers.
