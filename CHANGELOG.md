@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.3](https://github.com/stefanBid/sb-template-nuxt/compare/v1.9.2...v1.9.3) (2025-12-14)
+
+
+### Bug Fixes
+
+* general ([#50](https://github.com/stefanBid/sb-template-nuxt/issues/50)) ([2f38a1e](https://github.com/stefanBid/sb-template-nuxt/commit/2f38a1eaeb11297c516c59bf34bb284a78ba3821))
+
 ## [1.9.2](https://github.com/stefanBid/sb-template-nuxt/compare/v1.9.1...v1.9.2) (2025-12-04)
 
 
