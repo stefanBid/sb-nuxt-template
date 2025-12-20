@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.4](https://github.com/stefanBid/sb-template-nuxt/compare/v1.9.3...v1.9.4) (2025-12-20)
+
+
+### Bug Fixes
+
+* update Nuxt, Tailwind CSS, and ESLint versions in README ([#52](https://github.com/stefanBid/sb-template-nuxt/issues/52)) ([a686e6f](https://github.com/stefanBid/sb-template-nuxt/commit/a686e6fb773bc00c2c3dd0d5bdc55afc29106dee))
+
 ## [1.9.3](https://github.com/stefanBid/sb-template-nuxt/compare/v1.9.2...v1.9.3) (2025-12-14)
 
 
