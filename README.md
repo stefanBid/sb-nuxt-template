@@ -17,9 +17,9 @@
 
   **Stop wasting time on boilerplate. Start building features.**
 
-  A battle-tested, feature-rich Nuxt 3 template that includes everything you need: i18n, styling system, reusable components, and CI/CD ready to deploy.
+  A battle-tested, feature-rich Nuxt 3 template that includes everything you need: modern design system, reusable UI components, i18n support, and CI/CD ready to deploy. Build beautiful, production-ready interfaces in minutes, not weeks.
 
-  [Quick Start](#-quick-start) • [Features](#-core-features) • [Customization](#-customization) • [Deploy](#-deployment)
+  [Quick Start](#-quick-start) • [Features](#-core-features) • [Components](#-ready-to-use-components) • [Deploy](#-deployment)
 
 </div>
 
@@ -28,6 +28,7 @@
 ## 📋 Table of Contents
 
 - [Core Features](#-core-features)
+- [Ready-to-Use Components](#-ready-to-use-components)
 - [Quick Start](#-quick-start)
 - [Project Structure](#-project-structure)
 - [Customization](#-customization)
@@ -43,11 +44,12 @@
 ## ✨ Core Features
 
 ### 🎨 Styling & Design System
-- **Tailwind CSS 4.1.17** - Modern utility-first CSS with custom design tokens
-- **Custom Theme System** - Pre-configured light theme with CSS variables (`app/assets/css/theme.css`)
-- **Typography Utilities** - Ready-to-use text styles with `ty-app-*` classes
-- **Responsive Breakpoints** - Mobile-first design aligned with Tailwind standards
-- **Smooth Animations** - CSS transitions and animations pre-configured
+- **Tailwind CSS 4.1.18** - Modern utility-first CSS with custom design tokens
+- **Custom Theme System** - Pre-configured theme with CSS variables for easy customization
+- **Typography Utilities** - 9 ready-to-use text styles (`ty-app-hero`, `ty-app-title`, etc.)
+- **Color Palette** - Semantic color system (main, surface, accent, contrast, muted, error)
+- **Responsive Design** - Mobile-first with smooth transitions on all breakpoints
+- **Dark Mode Ready** - Theme structure prepared for dark mode implementation
 
 ### 🌍 Internationalization (i18n)
 - **@nuxtjs/i18n 10.2.1** - Complete i18n solution
@@ -62,6 +64,219 @@
 - **`BaseIconMenu`** - Floating dropdown menu with keyboard navigation
 - **`BaseCloseButton`** - Accessible close button
 
+---
+
+## 🧩 Ready-to-Use Components
+
+**Build modern interfaces in minutes.** This template includes a complete library of production-ready, accessible, and fully customizable UI components designed to accelerate your development workflow.
+
+### 🎨 Form Components
+
+#### **BaseButton**
+Full-featured button component with multiple variants and states.
+
+**Variants:** `primary`, `secondary`, `outline`
+**Types:** `button`, `submit`, `reset`, `link`
+**States:** loading, disabled
+**Features:** Icon support, accessible, keyboard navigation
+
+```vue
+<BaseButton variant="primary" :is-loading="false">
+  <Icon name="lucide:send" class="size-5 mr-2" />
+  Send Message
+</BaseButton>
+
+<BaseButton variant="outline" type="link" to="/about">
+  Learn More
+</BaseButton>
+```
+
+#### **BaseInput**
+Text input with label, hints, error states, and prefix icons.
+
+**Types:** `text`, `email`, `password`, `number`
+**Features:** Validation states, accessible, auto-focus, prefix icons
+
+```vue
+<BaseInput
+  id="email"
+  v-model:input="email"
+  type="email"
+  label="Email Address"
+  placeholder="user@example.com"
+  prefix-icon="lucide:mail"
+  hint="We'll never share your email"
+  :error="emailError"
+/>
+```
+
+#### **BaseTextarea**
+Multi-line text input with character counter.
+
+**Features:** Character limit, auto-resize, validation states
+
+```vue
+<BaseTextarea
+  id="message"
+  v-model:input="message"
+  label="Your Message"
+  :max-length="500"
+  :rows="4"
+  placeholder="Type your message..."
+/>
+```
+
+#### **BaseCheckbox**
+Custom checkbox with label slot.
+
+**Features:** Custom styling, accessible, label slot
+
+```vue
+<BaseCheckbox id="terms" v-model:input="acceptTerms">
+  I agree to the terms and conditions
+</BaseCheckbox>
+```
+
+#### **BaseCombobox**
+Advanced select component with single/multiple selection.
+
+**Types:** `single`, `multiple`
+**Features:** Searchable, keyboard navigation, floating UI, custom icons
+
+```vue
+<BaseCombobox
+  id="country"
+  v-model:input="selectedCountries"
+  type="multiple"
+  :items="countries"
+  label="Select Countries"
+  prefix-icon="lucide:globe"
+  placeholder="Choose countries..."
+/>
+```
+
+### 📦 Layout Components
+
+#### **BaseCard**
+Flexible card container with slots for header, body, and footer.
+
+**Variants:** `dark`, `light`, `dark-hover`, `light-hover`
+**Alignment:** `left`, `center`, `right`
+**Slots:** `card-header`, `card-body`, `card-footer`, `default`
+
+```vue
+<BaseCard
+  title="Card Title"
+  subtitle="Card Subtitle"
+  paragraph="Card description text"
+  variant="dark-hover"
+  align="center"
+>
+  <template #card-header>
+    <Icon name="lucide:star" class="size-6 text-app-accent" />
+  </template>
+
+  <template #card-footer>
+    <BaseButton variant="primary">Action</BaseButton>
+  </template>
+</BaseCard>
+
+<!-- Full custom content -->
+<BaseCard :full-custom-content="true">
+  <div class="custom-layout">
+    <!-- Your custom content -->
+  </div>
+</BaseCard>
+```
+
+#### **BaseDialog**
+Modal dialog with size variants and custom slots.
+
+**Sizes:** `sm`, `md`, `lg`, `full`
+**Features:** Scroll lock, keyboard (ESC), accessible, click outside to close
+
+```vue
+<BaseDialog
+  :is-open="isDialogOpen"
+  size="md"
+  title="Dialog Title"
+  subtitle="Dialog subtitle"
+  @close="isDialogOpen = false"
+>
+  <template #header>
+    <div class="custom-header">
+      <!-- Optional custom header content -->
+    </div>
+  </template>
+
+  <p>Dialog content goes here</p>
+
+  <template #footer>
+    <BaseButton variant="outline" @click="isDialogOpen = false">
+      Cancel
+    </BaseButton>
+    <BaseButton variant="primary" @click="handleSave">
+      Save
+    </BaseButton>
+  </template>
+</BaseDialog>
+```
+
+### 🧭 Navigation Components
+
+#### **BaseIconMenu**
+Dropdown menu with floating UI and keyboard navigation.
+
+**Features:** Floating positioning, keyboard support, click outside to close
+
+```vue
+<BaseIconMenu
+  icon="lucide:menu"
+  :items="menuItems"
+  :selected-item-id="selectedId"
+  @select="handleSelect"
+/>
+
+<script setup>
+const menuItems = [
+  { code: 'profile', label: 'Profile', icon: 'lucide:user', iconType: 'nuxt-icon' },
+  { code: 'settings', label: 'Settings', icon: 'lucide:settings', iconType: 'nuxt-icon' },
+]
+</script>
+```
+
+### 🔔 Feedback Components
+
+#### **TheNotificationBanner**
+Toast notification system with multiple types.
+
+**Types:** `success`, `error`, `warning`, `info`
+**Features:** Auto-dismiss, manual close, stacking
+
+```vue
+<script setup>
+const { notify } = useAppNotifications()
+
+notify({
+  type: 'success',
+  title: 'Success!',
+  description: 'Your changes have been saved.',
+  duration: 5000,
+})
+</script>
+```
+
+### 🎯 Why These Components?
+
+✅ **Accessible** - ARIA attributes, keyboard navigation, focus management
+✅ **Responsive** - Mobile-first design with smooth transitions
+✅ **Customizable** - Full theme support with CSS variables
+✅ **Type-Safe** - Complete TypeScript support
+✅ **Production-Ready** - Battle-tested in real projects
+✅ **i18n Ready** - Internationalization support built-in
+
+**See all components in action:** Run `npm run dev` and visit the homepage for a complete showcase.
+
 ### 🛠️ Developer Experience
 - **TypeScript** - Full type safety
 - **ESLint 9.39.1** - Code quality with stylistic rules
@@ -75,7 +290,8 @@
 - **Multiple Formats** - WebP, AVIF, PNG support
 - **Responsive Images** - Automatic srcset generation
 - **Cloudinary Ready** - Pre-configured provider
-- **@nuxt/icon 2.1.0** - SVG icon system with MDI and Flagpack collections
+- **@nuxt/icon 2.1.0** - SVG icon system with Lucide icon collection
+- **Icon Library** - 1000+ Lucide icons ready to use
 
 ### ⚙️ CI/CD Ready
 - **GitHub Actions** - Pre-configured workflows
@@ -144,8 +360,15 @@ sb-template-nuxt/
 │   │
 │   ├── components/
 │   │   ├── base/
-│   │   │   ├── close-button/     # BaseCloseButton.vue
-│   │   │   └── icon-menu/        # BaseIconMenu.vue
+│   │   │   ├── button/           # BaseButton.vue - Multi-variant button
+│   │   │   ├── card/             # BaseCard.vue - Flexible card container
+│   │   │   ├── checkbox/         # BaseCheckbox.vue - Custom checkbox
+│   │   │   ├── close-button/     # BaseCloseButton.vue - Accessible close button
+│   │   │   ├── combobox/         # BaseCombobox.vue - Select dropdown
+│   │   │   ├── dialog/           # BaseDialog.vue - Modal dialog
+│   │   │   ├── icon-menu/        # BaseIconMenu.vue - Dropdown menu
+│   │   │   ├── input/            # BaseInput.vue - Text input with validation
+│   │   │   └── textarea/         # BaseTextarea.vue - Multi-line input
 │   │   ├── the-footer/           # TheFooter.vue
 │   │   ├── the-header/           # TheHeader.vue & TheHeaderMenuToggle.vue
 │   │   └── the-notification/     # TheNotificationBanner.vue & Box
