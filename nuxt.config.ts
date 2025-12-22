@@ -6,9 +6,9 @@ export default defineNuxtConfig({
   // @nuxt/eslint: Code linting and formatting
   // @nuxt/icon: Icon management system
   // @nuxt/image: Image optimization and lazy loading
-  // @vueuse/nuxt: Collection of Vue composition utilities
   // @nuxtjs/i18n: Internationalization support
   // @nuxtjs/color-mode: Dark/light theme management
+  // @vueuse/nuxt: Collection of Vue composition utilities
   modules: ['@nuxt/eslint', '@nuxt/icon', '@nuxt/image', '@nuxtjs/i18n', '@nuxtjs/color-mode', '@vueuse/nuxt'],
 
   // Enable Server-Side Rendering for better SEO and initial page load
