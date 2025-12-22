@@ -165,6 +165,53 @@
           "cancel-button": "Cancel",
           "confirm-button": "Confirm"
         }
+      },
+      "inputs": {
+        "section-title": "Input Fields",
+        "text": {
+          "label": "Text Input",
+          "placeholder": "Enter text...",
+          "hint": "This is a text input field"
+        },
+        "email": {
+          "label": "Email Input",
+          "placeholder": "email{'@'}example.com",
+          "hint": "Enter a valid email address"
+        },
+        "password": {
+          "label": "Password Input",
+          "placeholder": "••••••••",
+          "hint": "Minimum 8 characters"
+        },
+        "number": {
+          "label": "Number Input",
+          "placeholder": "123",
+          "hint": "Enter a numeric value"
+        },
+        "combobox": {
+          "label": "Select Option",
+          "placeholder": "Choose one...",
+          "hint": "Single selection combobox"
+        },
+        "combobox-multiple": {
+          "label": "Multiple Selection",
+          "placeholder": "Choose multiple...",
+          "hint": "Multiple selection combobox"
+        },
+        "textarea": {
+          "label": "Textarea",
+          "placeholder": "Enter your message...",
+          "hint": "Maximum 200 characters"
+        },
+        "checkbox": {
+          "label": "Checkbox",
+          "text": "I agree to the terms and conditions"
+        },
+        "error": {
+          "label": "Input with Error",
+          "placeholder": "This field has an error",
+          "message": "This field is required"
+        }
       }
     }
   },

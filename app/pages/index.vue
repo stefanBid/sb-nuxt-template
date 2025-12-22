@@ -11,6 +11,23 @@ const isHeaderDialogOpen = ref(false)
 const isFooterDialogOpen = ref(false)
 const isConfirmDialogOpen = ref(false)
 
+// State for inputs
+const textInput = ref('')
+const emailInput = ref('')
+const passwordInput = ref('')
+const numberInput = ref('')
+const textareaInput = ref('')
+const checkboxInput = ref(false)
+const comboboxInput = ref<string[]>([])
+const multiComboboxInput = ref<string[]>([])
+
+const comboboxItems = [
+  { label: 'Option 1', value: 'option-1' },
+  { label: 'Option 2', value: 'option-2' },
+  { label: 'Option 3', value: 'option-3' },
+  { label: 'Option 4', value: 'option-4' },
+]
+
 useSeoMeta({
   // LOCALIZED
   title: () => t('meta.home.title'),
@@ -299,103 +316,107 @@ useSeoMeta({
       <!-- Inputs Section -->
       <section class="space-y-8">
         <h2 class="ty-app-title-xl text-app-accent mb-8">
-          Input Fields
+          {{ t('pages.home.inputs.section-title') }}
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
           <!-- Text Input -->
-          <div class="space-y-2">
-            <label class="ty-app-label text-app-contrast block">Text Input</label>
-            <input
-              class="w-full px-4 py-3 bg-app-surface border border-app-border rounded-lg text-app-contrast ty-app-paragraph focus:border-app-accent focus:outline-none transition-colors"
-              placeholder="Enter text..."
-              type="text"
-            />
-          </div>
+          <BaseInput
+            id="text-input"
+            v-model:input="textInput"
+            :hint="t('pages.home.inputs.text.hint')"
+            :label="t('pages.home.inputs.text.label')"
+            :placeholder="t('pages.home.inputs.text.placeholder')"
+            type="text"
+          />
 
-          <!-- Email Input -->
-          <div class="space-y-2">
-            <label class="ty-app-label text-app-contrast block">Email Input</label>
-            <input
-              class="w-full px-4 py-3 bg-app-surface border border-app-border rounded-lg text-app-contrast ty-app-paragraph focus:border-app-accent focus:outline-none transition-colors"
-              placeholder="email@example.com"
-              type="email"
-            />
-          </div>
+          <!-- Email Input with Icon -->
+          <BaseInput
+            id="email-input"
+            v-model:input="emailInput"
+            :hint="t('pages.home.inputs.email.hint')"
+            :label="t('pages.home.inputs.email.label')"
+            :placeholder="t('pages.home.inputs.email.placeholder')"
+            prefix-icon="lucide:mail"
+            type="email"
+          />
 
-          <!-- Password Input -->
-          <div class="space-y-2">
-            <label class="ty-app-label text-app-contrast block">Password Input</label>
-            <input
-              class="w-full px-4 py-3 bg-app-surface border border-app-border rounded-lg text-app-contrast ty-app-paragraph focus:border-app-accent focus:outline-none transition-colors"
-              placeholder="••••••••"
-              type="password"
-            />
-          </div>
+          <!-- Password Input with Icon -->
+          <BaseInput
+            id="password-input"
+            v-model:input="passwordInput"
+            :hint="t('pages.home.inputs.password.hint')"
+            :label="t('pages.home.inputs.password.label')"
+            :placeholder="t('pages.home.inputs.password.placeholder')"
+            prefix-icon="lucide:lock"
+            type="password"
+          />
 
-          <!-- Number Input -->
-          <div class="space-y-2">
-            <label class="ty-app-label text-app-contrast block">Number Input</label>
-            <input
-              class="w-full px-4 py-3 bg-app-surface border border-app-border rounded-lg text-app-contrast ty-app-paragraph focus:border-app-accent focus:outline-none transition-colors"
-              placeholder="123"
-              type="number"
-            />
-          </div>
+          <!-- Number Input with Icon -->
+          <BaseInput
+            id="number-input"
+            v-model:input="numberInput"
+            :hint="t('pages.home.inputs.number.hint')"
+            :label="t('pages.home.inputs.number.label')"
+            :placeholder="t('pages.home.inputs.number.placeholder')"
+            prefix-icon="lucide:hash"
+            type="number"
+          />
 
-          <!-- Select -->
-          <div class="space-y-2">
-            <label class="ty-app-label text-app-contrast block">Select</label>
-            <select class="w-full px-4 py-3 bg-app-surface border border-app-border rounded-lg text-app-contrast ty-app-paragraph focus:border-app-accent focus:outline-none transition-colors">
-              <option>Option 1</option>
-              <option>Option 2</option>
-              <option>Option 3</option>
-            </select>
-          </div>
+          <!-- Single Select Combobox -->
+          <BaseCombobox
+            id="combobox-single"
+            v-model:input="comboboxInput"
+            :hint="t('pages.home.inputs.combobox.hint')"
+            :items="comboboxItems"
+            :label="t('pages.home.inputs.combobox.label')"
+            :placeholder="t('pages.home.inputs.combobox.placeholder')"
+            prefix-icon="lucide:list"
+            type="single"
+          />
+
+          <!-- Multiple Select Combobox -->
+          <BaseCombobox
+            id="combobox-multiple"
+            v-model:input="multiComboboxInput"
+            :hint="t('pages.home.inputs.combobox-multiple.hint')"
+            :items="comboboxItems"
+            :label="t('pages.home.inputs.combobox-multiple.label')"
+            :placeholder="t('pages.home.inputs.combobox-multiple.placeholder')"
+            prefix-icon="lucide:list-checks"
+            type="multiple"
+          />
 
           <!-- Textarea -->
-          <div class="space-y-2 md:col-span-2">
-            <label class="ty-app-label text-app-contrast block">Textarea</label>
-            <textarea
-              class="w-full px-4 py-3 bg-app-surface border border-app-border rounded-lg text-app-contrast ty-app-paragraph focus:border-app-accent focus:outline-none transition-colors resize-none"
-              placeholder="Enter your message..."
-              rows="4"
-            ></textarea>
-          </div>
+          <BaseTextarea
+            id="textarea-input"
+            v-model:input="textareaInput"
+            class="md:col-span-2"
+            :hint="t('pages.home.inputs.textarea.hint')"
+            :label="t('pages.home.inputs.textarea.label')"
+            :max-length="200"
+            :placeholder="t('pages.home.inputs.textarea.placeholder')"
+            :rows="4"
+          />
 
           <!-- Checkbox -->
-          <div class="space-y-2">
-            <label class="flex items-center gap-3 cursor-pointer">
-              <input
-                class="w-5 h-5 bg-app-surface border border-app-border rounded text-app-accent focus:ring-app-accent focus:ring-2"
-                type="checkbox"
-              />
-              <span class="ty-app-paragraph text-app-contrast">Checkbox Option</span>
-            </label>
-          </div>
+          <BaseCheckbox
+            id="checkbox-input"
+            v-model:input="checkboxInput"
+            :label="t('pages.home.inputs.checkbox.label')"
+          >
+            {{ t('pages.home.inputs.checkbox.text') }}
+          </BaseCheckbox>
 
-          <!-- Radio -->
-          <div class="space-y-2">
-            <label class="ty-app-label text-app-contrast block mb-3">Radio Buttons</label>
-            <div class="space-y-2">
-              <label class="flex items-center gap-3 cursor-pointer">
-                <input
-                  class="w-5 h-5 bg-app-surface border border-app-border text-app-accent focus:ring-app-accent focus:ring-2"
-                  name="radio-group"
-                  type="radio"
-                />
-                <span class="ty-app-paragraph text-app-contrast">Radio 1</span>
-              </label>
-              <label class="flex items-center gap-3 cursor-pointer">
-                <input
-                  class="w-5 h-5 bg-app-surface border border-app-border text-app-accent focus:ring-app-accent focus:ring-2"
-                  name="radio-group"
-                  type="radio"
-                />
-                <span class="ty-app-paragraph text-app-contrast">Radio 2</span>
-              </label>
-            </div>
-          </div>
+          <!-- Input with Error -->
+          <BaseInput
+            id="error-input"
+            :error="t('pages.home.inputs.error.message')"
+            :label="t('pages.home.inputs.error.label')"
+            :placeholder="t('pages.home.inputs.error.placeholder')"
+            prefix-icon="lucide:alert-circle"
+            type="text"
+          />
         </div>
       </section>
 

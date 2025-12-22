@@ -165,6 +165,53 @@
           "cancel-button": "Annulla",
           "confirm-button": "Conferma"
         }
+      },
+      "inputs": {
+        "section-title": "Campi di Input",
+        "text": {
+          "label": "Input di Testo",
+          "placeholder": "Inserisci testo...",
+          "hint": "Questo è un campo di testo"
+        },
+        "email": {
+          "label": "Input Email",
+          "placeholder": "email{'@'}esempio.it",
+          "hint": "Inserisci un indirizzo email valido"
+        },
+        "password": {
+          "label": "Input Password",
+          "placeholder": "••••••••",
+          "hint": "Minimo 8 caratteri"
+        },
+        "number": {
+          "label": "Input Numerico",
+          "placeholder": "123",
+          "hint": "Inserisci un valore numerico"
+        },
+        "combobox": {
+          "label": "Seleziona Opzione",
+          "placeholder": "Scegli una...",
+          "hint": "Combobox a selezione singola"
+        },
+        "combobox-multiple": {
+          "label": "Selezione Multipla",
+          "placeholder": "Scegli multiple...",
+          "hint": "Combobox a selezione multipla"
+        },
+        "textarea": {
+          "label": "Area di Testo",
+          "placeholder": "Inserisci il tuo messaggio...",
+          "hint": "Massimo 200 caratteri"
+        },
+        "checkbox": {
+          "label": "Checkbox",
+          "text": "Accetto i termini e le condizioni"
+        },
+        "error": {
+          "label": "Input con Errore",
+          "placeholder": "Questo campo ha un errore",
+          "message": "Questo campo è obbligatorio"
+        }
       }
     }
   },
