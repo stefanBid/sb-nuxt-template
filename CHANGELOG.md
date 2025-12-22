@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/stefanBid/sb-template-nuxt/compare/v1.9.5...v2.0.0) (2025-12-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* add production-ready component library with new theme system ([#56](https://github.com/stefanBid/sb-template-nuxt/issues/56))
+
+### Features
+
+* add production-ready component library with new theme system ([#56](https://github.com/stefanBid/sb-template-nuxt/issues/56)) ([6bb50b7](https://github.com/stefanBid/sb-template-nuxt/commit/6bb50b7e132aa7532950d56ce89e5e600a8e522f))
+
 ## [1.9.5](https://github.com/stefanBid/sb-template-nuxt/compare/v1.9.4...v1.9.5) (2025-12-22)
 
 
