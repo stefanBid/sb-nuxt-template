@@ -121,7 +121,8 @@ watch(isMdUp, (newVal) => {
               </span>
             </template>
           </nav>
-          <div class="ml-0 md:ml-4 hidden! md:inline-block! u-app-soft-transition ">
+          <div class="ml-0 md:ml-4 hidden! md:flex! items-center gap-2 u-app-soft-transition">
+            <TheThemeToggle />
             <BaseIconMenu
               :icon="'lucide:globe'"
               :items="props.langs"
