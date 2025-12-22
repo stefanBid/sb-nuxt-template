@@ -319,18 +319,36 @@ useSeoMeta({
               Primary Buttons
             </h3>
             <div class="flex flex-wrap gap-4">
-              <button class="ty-app-btn-label px-6 py-3 bg-app-accent text-white rounded-lg hover:bg-app-accent-hover transition-colors">
+              <BaseButton variant="primary">
                 Primary Button
-              </button>
-              <button class="ty-app-btn-label px-6 py-3 bg-app-accent text-white rounded-lg hover:bg-app-accent-hover transition-colors opacity-50 cursor-not-allowed">
+              </BaseButton>
+              <BaseButton variant="primary" :is-disabled="true">
                 Disabled
-              </button>
-              <button class="ty-app-btn-label px-8 py-4 bg-app-accent text-white rounded-lg hover:bg-app-accent-hover transition-colors">
-                Large Button
-              </button>
-              <button class="ty-app-btn-label px-4 py-2 bg-app-accent text-white rounded-lg hover:bg-app-accent-hover transition-colors text-sm">
-                Small Button
-              </button>
+              </BaseButton>
+              <BaseButton variant="primary" :is-loading="true">
+                Loading
+              </BaseButton>
+              <BaseButton variant="primary" type="submit">
+                Submit Button
+              </BaseButton>
+            </div>
+          </div>
+
+          <!-- Secondary Buttons -->
+          <div class="space-y-4">
+            <h3 class="ty-app-subtitle text-app-contrast">
+              Secondary Buttons
+            </h3>
+            <div class="flex flex-wrap gap-4">
+              <BaseButton variant="secondary">
+                Secondary Button
+              </BaseButton>
+              <BaseButton variant="secondary" :is-disabled="true">
+                Disabled
+              </BaseButton>
+              <BaseButton variant="secondary" :is-loading="true">
+                Loading
+              </BaseButton>
             </div>
           </div>
 
@@ -340,79 +358,72 @@ useSeoMeta({
               Outline Buttons
             </h3>
             <div class="flex flex-wrap gap-4">
-              <button class="ty-app-btn-label px-6 py-3 bg-transparent border-2 border-app-accent text-app-accent rounded-lg hover:bg-app-accent hover:text-white transition-colors">
+              <BaseButton variant="outline">
                 Outline Button
-              </button>
-              <button class="ty-app-btn-label px-6 py-3 bg-transparent border-2 border-app-contrast text-app-contrast rounded-lg hover:bg-app-contrast hover:text-white transition-colors">
-                Dark Outline
-              </button>
-              <button class="ty-app-btn-label px-6 py-3 bg-transparent border-2 border-purple-600 text-purple-600 rounded-lg hover:bg-purple-600 hover:text-white transition-colors">
-                Purple Outline
-              </button>
+              </BaseButton>
+              <BaseButton variant="outline" :is-disabled="true">
+                Disabled
+              </BaseButton>
+              <BaseButton variant="outline" :is-loading="true">
+                Loading
+              </BaseButton>
             </div>
           </div>
 
-          <!-- Ghost Buttons -->
+          <!-- Link Buttons -->
           <div class="space-y-4">
             <h3 class="ty-app-subtitle text-app-contrast">
-              Ghost Buttons
+              Link Buttons
             </h3>
             <div class="flex flex-wrap gap-4">
-              <button class="ty-app-btn-label px-6 py-3 bg-transparent text-app-accent rounded-lg hover:bg-app-accent/10 transition-colors">
-                Ghost Button
-              </button>
-              <button class="ty-app-btn-label px-6 py-3 bg-transparent text-app-contrast rounded-lg hover:bg-app-surface-2 transition-colors">
-                Ghost Dark
-              </button>
+              <BaseButton variant="primary" type="link" to="https://github.com">
+                Primary Link
+              </BaseButton>
+              <BaseButton variant="secondary" type="link" to="https://nuxt.com">
+                Secondary Link
+              </BaseButton>
+              <BaseButton variant="outline" type="link" to="https://tailwindcss.com">
+                Outline Link
+              </BaseButton>
             </div>
           </div>
 
-          <!-- Gradient Buttons -->
+          <!-- Buttons with Icons -->
           <div class="space-y-4">
             <h3 class="ty-app-subtitle text-app-contrast">
-              Gradient Buttons
-            </h3>
-            <div class="flex flex-wrap gap-4">
-              <button class="ty-app-btn-label px-6 py-3 bg-linear-to-r from-app-accent to-purple-600 text-white rounded-lg hover:opacity-90 transition-opacity">
-                Gradient Button
-              </button>
-              <button class="ty-app-btn-label px-6 py-3 bg-linear-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:opacity-90 transition-opacity">
-                Blue to Purple
-              </button>
-            </div>
-          </div>
-
-          <!-- Icon Buttons -->
-          <div class="space-y-4">
-            <h3 class="ty-app-subtitle text-app-contrast">
-              Icon Buttons
+              Buttons with Custom Content
             </h3>
             <div class="flex flex-wrap gap-4 items-center">
-              <button class="ty-app-btn-label px-6 py-3 bg-app-accent text-white rounded-lg hover:bg-app-accent-hover transition-colors flex items-center gap-2">
-                <span>→</span>
-                With Icon
-              </button>
-              <button class="w-12 h-12 bg-app-accent text-white rounded-lg hover:bg-app-accent-hover transition-colors flex items-center justify-center text-xl">
-                +
-              </button>
-              <button class="w-12 h-12 bg-app-surface border border-app-border text-app-contrast rounded-full hover:border-app-accent transition-colors flex items-center justify-center">
-                ★
-              </button>
+              <BaseButton variant="primary">
+                <Icon class="size-5 mr-2" name="lucide:send" />
+                Send Message
+              </BaseButton>
+              <BaseButton variant="secondary">
+                <Icon class="size-5 mr-2" name="lucide:download" />
+                Download
+              </BaseButton>
+              <BaseButton variant="outline">
+                <Icon class="size-5 mr-2" name="lucide:heart" />
+                Like
+              </BaseButton>
             </div>
           </div>
 
-          <!-- Rounded Buttons -->
+          <!-- All States Demo -->
           <div class="space-y-4">
             <h3 class="ty-app-subtitle text-app-contrast">
-              Rounded Buttons
+              All States Demo
             </h3>
             <div class="flex flex-wrap gap-4">
-              <button class="ty-app-btn-label px-8 py-3 bg-app-accent text-white rounded-full hover:bg-app-accent-hover transition-colors">
-                Rounded Button
-              </button>
-              <button class="ty-app-btn-label px-8 py-3 bg-transparent border-2 border-app-accent text-app-accent rounded-full hover:bg-app-accent hover:text-white transition-colors">
-                Rounded Outline
-              </button>
+              <BaseButton variant="primary">
+                Normal
+              </BaseButton>
+              <BaseButton variant="primary" :is-loading="true">
+                Loading
+              </BaseButton>
+              <BaseButton variant="primary" :is-disabled="true">
+                Disabled
+              </BaseButton>
             </div>
           </div>
         </div>
