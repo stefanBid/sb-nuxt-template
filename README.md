@@ -140,7 +140,7 @@ Custom checkbox with label slot.
 #### **BaseCombobox**
 Advanced select component with single/multiple selection.
 
-**Types:** `single`, `multiple`
+**Types:** `single`, `multiple`  
 **Features:** Searchable, keyboard navigation, floating UI, custom icons
 
 ```vue
@@ -153,6 +153,29 @@ Advanced select component with single/multiple selection.
   prefix-icon="lucide:globe"
   placeholder="Choose countries..."
 />
+```
+
+#### **BaseChip**
+Compact label component for tags, badges, and status indicators.
+
+**Variants:** `accent`, `primary`, `secondary`  
+**Features:** Icon support, rounded design, responsive sizing
+
+```vue
+<!-- Simple chip -->
+<BaseChip text="Featured" variant="accent" />
+
+<!-- Chip with icon -->
+<BaseChip 
+  icon="lucide:star" 
+  text="Premium" 
+  variant="accent" 
+/>
+
+<!-- Use cases -->
+<BaseChip icon="lucide:code" text="Vue.js" variant="accent" />
+<BaseChip icon="lucide:check-circle" text="Active" variant="accent" />
+<BaseChip icon="lucide:folder" text="Design" variant="primary" />
 ```
 
 ### 📦 Layout Components
@@ -363,6 +386,7 @@ sb-template-nuxt/
 │   │   │   ├── button/           # BaseButton.vue - Multi-variant button
 │   │   │   ├── card/             # BaseCard.vue - Flexible card container
 │   │   │   ├── checkbox/         # BaseCheckbox.vue - Custom checkbox
+│   │   │   ├── chip/             # BaseChip.vue - Tag/badge component
 │   │   │   ├── close-button/     # BaseCloseButton.vue - Accessible close button
 │   │   │   ├── combobox/         # BaseCombobox.vue - Select dropdown
 │   │   │   ├── dialog/           # BaseDialog.vue - Modal dialog
