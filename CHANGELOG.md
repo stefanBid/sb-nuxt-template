@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.5](https://github.com/stefanBid/sb-template-nuxt/compare/v1.9.4...v1.9.5) (2025-12-22)
+
+
+### Bug Fixes
+
+* add .nvmrc file with Node.js version 24.11.0 ([#54](https://github.com/stefanBid/sb-template-nuxt/issues/54)) ([6602994](https://github.com/stefanBid/sb-template-nuxt/commit/66029945aee34ad6ede0fe44ad2a9569f2e7cec9))
+
 ## [1.9.4](https://github.com/stefanBid/sb-template-nuxt/compare/v1.9.3...v1.9.4) (2025-12-20)
 
 
