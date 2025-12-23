@@ -36,8 +36,8 @@ const onClick = () => {
     <Icon
       class="size-4.5 md:size-5"
       :class="{
-        'text-app-accent': props.isActive,
-        'text-app-contrast group-hover:text-app-accent': !props.isActive,
+        'text-app-contrast': props.isActive,
+        'text-app-muted group-hover:text-app-contrast': !props.isActive,
       }"
       :name="props.icon"
     />
