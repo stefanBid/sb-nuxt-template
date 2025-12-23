@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.2](https://github.com/stefanBid/sb-template-nuxt/compare/v2.1.1...v2.1.2) (2025-12-23)
+
+
+### Bug Fixes
+
+* manage chip  ([#62](https://github.com/stefanBid/sb-template-nuxt/issues/62)) ([6b980d6](https://github.com/stefanBid/sb-template-nuxt/commit/6b980d6e4e3c26a8153deb52f5886a8b5c664c7c))
+
 ## [2.1.1](https://github.com/stefanBid/sb-template-nuxt/compare/v2.1.0...v2.1.1) (2025-12-23)
 
 
