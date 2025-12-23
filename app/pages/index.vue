@@ -28,6 +28,12 @@ const comboboxItems = [
   { label: 'Option 4', value: 'option-4' },
 ]
 
+// Handlers for chip interactions
+const handleChipClick = (chipName: string) => {
+  // eslint-disable-next-line no-console
+  console.log(`${chipName} clicked!`)
+}
+
 useSeoMeta({
   // LOCALIZED
   title: () => t('meta.home.title'),
@@ -536,6 +542,72 @@ useSeoMeta({
                   <BaseChip icon="lucide:folder" :text="t('pages.home.chips.use-cases.design')" variant="primary" />
                   <BaseChip icon="lucide:folder" :text="t('pages.home.chips.use-cases.development')" variant="primary" />
                   <BaseChip icon="lucide:folder" :text="t('pages.home.chips.use-cases.marketing')" variant="primary" />
+                </div>
+              </div>
+
+              <!-- Interactive - Clickable -->
+              <div class="p-4 bg-app-surface rounded-lg border border-app-border">
+                <p class="ty-app-label text-app-muted mb-3">
+                  Interactive - Clickable (button)
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <BaseChip
+                    :clickable="true"
+                    text="Click me (Accent)"
+                    variant="accent"
+                    @chip-click="() => handleChipClick('Accent Chip')"
+                  />
+                  <BaseChip
+                    :clickable="true"
+                    icon="lucide:x"
+                    text="Remove (Primary)"
+                    variant="primary"
+                    @chip-click="() => handleChipClick('Remove Chip')"
+                  />
+                  <BaseChip
+                    :clickable="true"
+                    icon="lucide:filter"
+                    text="Filter (Secondary)"
+                    variant="secondary"
+                    @chip-click="() => handleChipClick('Filter Chip')"
+                  />
+                </div>
+              </div>
+
+              <!-- Interactive - Linkable -->
+              <div class="p-4 bg-app-surface rounded-lg border border-app-border">
+                <p class="ty-app-label text-app-muted mb-3">
+                  Interactive - Linkable (anchor)
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <BaseChip
+                    icon="lucide:github"
+                    :linkable="{
+                      href: 'https://github.com',
+                      target: '_blank',
+                      rel: 'noopener noreferrer',
+                    }"
+                    text="GitHub"
+                    variant="primary"
+                  />
+                  <BaseChip
+                    icon="lucide:external-link"
+                    :linkable="{
+                      href: 'https://nuxt.com',
+                      target: '_blank',
+                      rel: 'noopener noreferrer',
+                    }"
+                    text="Documentation"
+                    variant="accent"
+                  />
+                  <BaseChip
+                    icon="lucide:mail"
+                    :linkable="{
+                      href: 'mailto:example@email.com',
+                    }"
+                    text="Email"
+                    variant="secondary"
+                  />
                 </div>
               </div>
             </div>

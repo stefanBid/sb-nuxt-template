@@ -121,50 +121,41 @@ const props = withDefaults(defineProps<TheFooterProps>(), {
 
         <!-- Social badges -->
         <div class="flex flex-wrap items-center gap-3 mt-2">
-          <a
+          <BaseChip
             v-if="props.githubUrl"
-            aria-label="Open GitHub profile"
-            class="u-app-focus rounded-full"
-            :href="githubUrl"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <BaseChip
-              icon="lucide:github"
-              text="GitHub"
-              variant="primary"
-            />
-          </a>
+            icon="lucide:github"
+            :linkable="{
+              href: props.githubUrl,
+              target: '_blank',
+              rel: 'noopener noreferrer',
+            }"
+            text="GitHub"
+            variant="primary"
+          />
 
-          <a
+          <BaseChip
             v-if="props.linkedinUrl"
-            aria-label="Open LinkedIn profile"
-            class="u-app-focus rounded-full"
-            :href="props.linkedinUrl"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <BaseChip
-              icon="lucide:linkedin"
-              text="LinkedIn"
-              variant="primary"
-            />
-          </a>
+            icon="lucide:linkedin"
+            :linkable="{
+              href: props.linkedinUrl,
+              target: '_blank',
+              rel: 'noopener noreferrer',
+            }"
+            text="LinkedIn"
+            variant="primary"
+          />
 
-          <a
+          <BaseChip
             v-if="props.instagramUrl"
-            aria-label="Open Instagram profile"
-            class="u-app-focus rounded-full"
-            :href="props.instagramUrl"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <BaseChip
-              icon="lucide:instagram"
-              text="Instagram"
-              variant="primary"
-            />
-          </a>
+            icon="lucide:instagram"
+            :linkable="{
+              href: props.instagramUrl,
+              target: '_blank',
+              rel: 'noopener noreferrer',
+            }"
+            text="Instagram"
+            variant="primary"
+          />
         </div>
       </section>
     </div>

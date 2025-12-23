@@ -122,7 +122,15 @@ watch(isMdUp, (newVal) => {
             </template>
           </nav>
           <div class="ml-0 md:ml-4 hidden! md:flex! items-center gap-2 u-app-soft-transition">
-            <TheThemeToggle />
+            <ClientOnly>
+              <TheThemeToggle />
+              <template #fallback>
+                <BaseIconButton
+                  aria-label="Loading theme"
+                  icon="lucide:ellipsis"
+                />
+              </template>
+            </ClientOnly>
             <BaseIconMenu
               :icon="'lucide:globe'"
               :items="props.langs"
@@ -188,7 +196,15 @@ watch(isMdUp, (newVal) => {
           <span class="ty-label text-app-muted u-app-soft-transition font-semibold ">{{ t('header.settings-section') }}</span>
         </div>
         <div class="p-6 flex items-center gap-2">
-          <TheThemeToggle />
+          <ClientOnly>
+            <TheThemeToggle />
+            <template #fallback>
+              <BaseIconButton
+                aria-label="Loading theme"
+                icon="lucide:ellipsis"
+              />
+            </template>
+          </ClientOnly>
           <BaseIconMenu
             :icon="'lucide:globe'"
             :items="props.langs"
