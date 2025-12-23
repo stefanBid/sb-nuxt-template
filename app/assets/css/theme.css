@@ -6,21 +6,64 @@
   --font-app-secondary: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
   /* =======================================
-     BASE COLORS
+     BASE COLORS - LIGHT MODE
      ======================================= */
-  --color-app-main: #f8f9fa;          /* main background: soft warm white */
+  --color-app-main: #f8faf9;          /* main background: soft white with subtle green tint */
   --color-app-surface: #ffffff;       /* elevated surface: pure white for cards */
-  --color-app-surface-2: #f1f3f5;     /* nested surface: subtle gray for nested elements */
-  --color-app-shadow: rgba(0, 0, 0, 0.08); /* soft shadow for depth */
-  --color-app-border: #dee2e6;        /* borders, outlines, dividers */
+  --color-app-surface-2: #f1f5f3;     /* nested surface: subtle green-gray for nested elements */
+  --color-app-shadow: rgba(0, 159, 93, 0.08); /* soft shadow with accent tint */
+  --color-app-border: #d4e4dc;        /* borders with subtle green tint */
 
   /* =======================================
-     ACCENTS & CONTRAST
+     ACCENTS & CONTRAST - LIGHT MODE
      ======================================= */
-  --color-app-accent: #2563eb;        /* primary accent: vibrant blue */
-  --color-app-accent-hover: #1d4ed8;  /* darker blue for hover */
-  --color-app-accent-border: #1e40af; /* deeper blue for borders */
+  --color-app-accent: #009F5D;        /* primary accent: vibrant green */
+  --color-app-accent-hover: #00804a;  /* darker green for hover */
+  --color-app-accent-border: #007041; /* deeper green for borders */
   --color-app-contrast: #1a1a1a;      /* main text on light backgrounds */
-  --color-app-muted: #6c757d;         /* secondary or subdued text */
-  --color-app-error: #dc2626;         /* alert or error */
+  --color-app-muted: #5a6c62;         /* secondary text with green undertone */
+
+  /* =======================================
+     STATUS COLORS - LIGHT MODE
+     ======================================= */
+  --color-app-success: #16a34a;  /* success state: green */
+  --color-app-warning: #f59e0b;  /* warning state: amber */
+  --color-app-error: #dc2626;    /* error state: red */
+  --color-app-info: #3b82f6;     /* info state: blue */
+
+  /* Notification backgrounds */
+  --color-app-success-bg: #d1fae5;  /* light green background */
+  --color-app-warning-bg: #fef3c7;  /* light amber background */
+  --color-app-error-bg: #fee2e2;    /* light red background */
+  --color-app-info-bg: #dbeafe;     /* light blue background */
+}
+
+
+/* =======================================
+   DARK MODE OVERRIDES
+   ======================================= */
+.dark {
+  --color-app-main: #0d0f0e;              /* main background: very dark with green undertone */
+  --color-app-surface: #161918;           /* elevated surface: dark green-gray */
+  --color-app-surface-2: #1f2522;         /* nested surface: lighter dark green-gray */
+  --color-app-border: #2d3733;            /* borders with green tint */
+  --color-app-contrast: #f0f5f2;          /* main text color with subtle green tint */
+  --color-app-muted: #94a89e;             /* secondary/muted text with green undertone */
+  --color-app-shadow: rgba(0, 0, 0, 0.4); /* shadows */
+
+  --color-app-accent: #00C975;        /* brighter green for dark mode visibility */
+  --color-app-accent-hover: #00E085;  /* even brighter for hover */
+  --color-app-accent-border: #00B366; /* slightly darker for borders */
+
+  /* Status colors - optimized for dark mode */
+  --color-app-success: #22c55e;  /* success state: bright green */
+  --color-app-warning: #fb923c;  /* warning state: orange */
+  --color-app-error: #ef4444;    /* error state: red */
+  --color-app-info: #60a5fa;     /* info state: blue */
+
+  /* Notification backgrounds - dark mode */
+  --color-app-success-bg: #14532d;  /* dark green background */
+  --color-app-warning-bg: #78350f;  /* dark amber background */
+  --color-app-error-bg: #7f1d1d;    /* dark red background */
+  --color-app-info-bg: #1e3a8a;     /* dark blue background */
 }

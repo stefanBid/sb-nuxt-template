@@ -42,13 +42,13 @@ onMounted(() => {
   <div
     :aria-live="props.type === 'error' ? 'assertive' : 'polite'"
     :class="[
-      'w-full sm:w-lg p-4 md:p-6 rounded-xl border backdrop-blur-sm u-app-soft-transition',
+      'w-full sm:w-lg p-4 md:p-6 rounded-xl border u-app-soft-transition',
       'shadow-[0_4px_20px_var(--color-app-shadow)]',
       {
-        'bg-emerald-50 border-emerald-500': props.type === 'success',
-        'bg-amber-50 border-amber-500': props.type === 'warning',
-        'bg-red-50 border-app-error': props.type === 'error',
-        'bg-blue-50 border-blue-500': props.type === 'info',
+        'bg-app-success-bg border-app-success': props.type === 'success',
+        'bg-app-warning-bg border-app-warning': props.type === 'warning',
+        'bg-app-error-bg border-app-error': props.type === 'error',
+        'bg-app-info-bg border-app-info': props.type === 'info',
       },
     ]"
     role="alert"
@@ -60,10 +60,10 @@ onMounted(() => {
         :class="[
           'shrink-0 flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-xl u-app-soft-transition',
           {
-            'bg-emerald-100 text-emerald-700': props.type === 'success',
-            'bg-amber-100 text-amber-700': props.type === 'warning',
-            'bg-red-100 text-red-700': props.type === 'error',
-            'bg-blue-100 text-blue-700': props.type === 'info',
+            'bg-app-surface text-app-success': props.type === 'success',
+            'bg-app-surface text-app-warning': props.type === 'warning',
+            'bg-app-surface text-app-error': props.type === 'error',
+            'bg-app-surface text-app-info': props.type === 'info',
           },
         ]"
       >
@@ -74,28 +74,12 @@ onMounted(() => {
       <div class="flex-1 min-w-0">
         <h3
           v-if="props.title"
-          :class="[
-            'text-lg sm:text-xl mb-1 u-app-soft-transition',
-            {
-              'text-emerald-900': props.type === 'success',
-              'text-amber-900': props.type === 'warning',
-              'text-red-900': props.type === 'error',
-              'text-blue-900': props.type === 'info',
-            },
-          ]"
+          class="ty-app-subtitle text-app-contrast u-app-soft-transition"
         >
           {{ props.title }}
         </h3>
         <p
-          :class="[
-            'text-[0.8125rem] sm:text-sm u-app-soft-transition',
-            {
-              'text-emerald-800': props.type === 'success',
-              'text-amber-800': props.type === 'warning',
-              'text-red-800': props.type === 'error',
-              'text-blue-800': props.type === 'info',
-            },
-          ]"
+          class="ty-app-label normal-case! text-app-muted u-app-soft-transition"
         >
           {{ props.message }}
         </p>
@@ -104,15 +88,7 @@ onMounted(() => {
       <!-- Close Button -->
       <BaseCloseButton
         v-if="props.dismissible"
-        :class="[
-          'shrink-0 -mt-1 -mr-1',
-          {
-            'text-emerald-700 hover:bg-emerald-100': props.type === 'success',
-            'text-amber-700 hover:bg-amber-100': props.type === 'warning',
-            'text-red-700 hover:bg-red-100': props.type === 'error',
-            'text-blue-700 hover:bg-blue-100': props.type === 'info',
-          },
-        ]"
+        class="shrink-0 -mt-1 -mr-1"
         @close="onClose()"
       />
     </div>

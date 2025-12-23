@@ -178,12 +178,12 @@ watch(open, (newVal) => {
     <div class="relative">
       <span
         v-if="props.prefixIcon"
-        class="absolute left-3 md:left-4 top-1/2 transform -translate-y-1/2 text-app-muted u-app-soft-transition pointer-events-none"
+        class="absolute left-3 md:left-4 top-1/2 transform -translate-y-1/2 text-app-muted/70 u-app-soft-transition pointer-events-none"
       >
         <Icon class="size-5" :name="props.prefixIcon" />
       </span>
 
-      <span class="absolute top-1/2 right-3 md:right-4 transform -translate-y-1/2 text-app-contrast u-app-soft-transition pointer-events-none">
+      <span class="absolute top-1/2 right-3 md:right-4 transform -translate-y-1/2 text-app-muted/70 u-app-soft-transition pointer-events-none">
         <Icon
           class="size-6 u-app-soft-transition"
           :class="{
@@ -200,11 +200,11 @@ watch(open, (newVal) => {
         ref="reference"
         :aria-describedby="describedBy"
         :aria-invalid="props.error ? 'true' : 'false'"
-        class="w-full rounded-xl bg-app-surface-2 border pl-3 pr-10 py-1.5 md:pl-4 md:pr-11 md:py-2 text-app-contrast ty-app-paragraph focus:outline-none focus:ring-2 focus:ring-app-accent truncate"
+        class="w-full rounded-xl bg-app-surface-2 border pl-3 pr-11 py-1.5 md:pl-4 md:pr-12 md:py-2 text-app-contrast ty-app-paragraph focus:outline-none focus:ring-2 focus:ring-app-accent truncate"
         :class="{
-          'border-red-500': props.error,
+          'border-app-error': props.error,
           'border-app-border': !props.error,
-          'pl-9! md:pl-10!': props.prefixIcon,
+          'pl-10! md:pl-11!': props.prefixIcon,
         }"
         :name="props.name || `${props.id}-name`"
         :placeholder="props.placeholder"
@@ -229,7 +229,7 @@ watch(open, (newVal) => {
     <p
       v-if="props.error"
       :id="`${props.id}-error`"
-      class="ty-app-label normal-case! text-red-500 mt-1 md:mt-1.5 u-app-soft-transition"
+      class="ty-app-label normal-case! text-app-error mt-1 md:mt-1.5 u-app-soft-transition"
       role="alert"
     >
       {{ props.error }}

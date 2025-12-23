@@ -121,7 +121,8 @@ watch(isMdUp, (newVal) => {
               </span>
             </template>
           </nav>
-          <div class="ml-0 md:ml-4 hidden! md:inline-block! u-app-soft-transition ">
+          <div class="ml-0 md:ml-4 hidden! md:flex! items-center gap-2 u-app-soft-transition">
+            <TheThemeToggle />
             <BaseIconMenu
               :icon="'lucide:globe'"
               :items="props.langs"
@@ -143,7 +144,7 @@ watch(isMdUp, (newVal) => {
       <!-- overlay -->
       <div
         aria-hidden="true"
-        class="fixed inset-0 top-16 bg-black/50 transition-opacity duration-200"
+        class="fixed inset-0 top-16 bg-app-main/80 backdrop-blur-sm transition-opacity duration-200"
         :class="open ? 'opacity-100 pointer-events-auto' :'opacity-0 pointer-events-none'"
         @click.stop="onClose()"
       ></div>
@@ -186,7 +187,8 @@ watch(isMdUp, (newVal) => {
         <div class="flex items-center justify-between px-6 py-3 border-y border-app-border">
           <span class="ty-label text-app-muted u-app-soft-transition font-semibold ">{{ t('header.settings-section') }}</span>
         </div>
-        <div class="p-6">
+        <div class="p-6 flex items-center gap-2">
+          <TheThemeToggle />
           <BaseIconMenu
             :icon="'lucide:globe'"
             :items="props.langs"
