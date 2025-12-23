@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.3](https://github.com/stefanBid/sb-template-nuxt/compare/v2.1.2...v2.1.3) (2025-12-23)
+
+
+### Bug Fixes
+
+* update error border class for checkbox and textarea components ([#64](https://github.com/stefanBid/sb-template-nuxt/issues/64)) ([b924683](https://github.com/stefanBid/sb-template-nuxt/commit/b924683caaa6bf9783a77124ccdc2a62c36e594e))
+
 ## [2.1.2](https://github.com/stefanBid/sb-template-nuxt/compare/v2.1.1...v2.1.2) (2025-12-23)
 
 
