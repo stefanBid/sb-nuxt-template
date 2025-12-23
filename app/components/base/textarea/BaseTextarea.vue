@@ -51,7 +51,7 @@ const lengths = computed(() => ({
       :aria-describedby="describedBy"
       :aria-invalid="props.error ? 'true' : 'false'"
       class="w-full rounded-lg bg-app-surface-2 border px-3 py-1.5 md:px-4 md:py-2 text-app-contrast ty-app-paragraph focus:outline-none focus:ring-2 focus:ring-app-accent resize-y min-h-38"
-      :class="props.error ? 'border-red-500' : 'border-app-border'"
+      :class="props.error ? 'border-app-error' : 'border-app-border'"
       :name="props.name || `${props.id}-name`"
       :placeholder="props.placeholder"
     ></textarea>

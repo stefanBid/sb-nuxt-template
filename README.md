@@ -8,7 +8,7 @@
   ### 🚀 Production-Ready Nuxt 3 Starter with Superpowers
 
   ![Node.js](https://img.shields.io/badge/node-%3E%3D24.11.0-brightgreen)
-  ![Vue](https://img.shields.io/badge/vue-3.5.25-4FC08D?logo=vue.js)
+  ![Vue](https://img.shields.io/badge/vue-3.5.26-4FC08D?logo=vue.js)
   ![Nuxt](https://img.shields.io/badge/nuxt-4.2.2-00DC82?logo=nuxt.js)
   ![TypeScript](https://img.shields.io/badge/typescript-latest-3178C6?logo=typescript)
   ![Tailwind CSS](https://img.shields.io/badge/tailwind-4.1.18-38B2AC?logo=tailwind-css)
