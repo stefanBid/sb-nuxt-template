@@ -29,12 +29,12 @@
     "isomorphic-dompurify": "^2.34.0",
     "nuxt": "^4.2.2",
     "tailwindcss": "^4.1.18",
-    "vue": "^3.5.25",
+    "vue": "^3.5.26",
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
     "@iconify-json/flagpack": "^1.2.7",
-    "@types/node": "^25.0.2"
+    "@types/node": "^25.0.3"
   },
   "engines": {
     "node": ">=24.11.0"
