@@ -124,6 +124,12 @@ watch(isMdUp, (newVal) => {
           <div class="ml-0 md:ml-4 hidden! md:flex! items-center gap-2 u-app-soft-transition">
             <ClientOnly>
               <TheThemeToggle />
+              <template #fallback>
+                <BaseIconButton
+                  aria-label="Loading theme"
+                  icon="lucide:ellipsis"
+                />
+              </template>
             </ClientOnly>
             <BaseIconMenu
               :icon="'lucide:globe'"
@@ -192,6 +198,12 @@ watch(isMdUp, (newVal) => {
         <div class="p-6 flex items-center gap-2">
           <ClientOnly>
             <TheThemeToggle />
+            <template #fallback>
+              <BaseIconButton
+                aria-label="Loading theme"
+                icon="lucide:ellipsis"
+              />
+            </template>
           </ClientOnly>
           <BaseIconMenu
             :icon="'lucide:globe'"
