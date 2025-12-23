@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/stefanBid/sb-template-nuxt/compare/v2.0.0...v2.1.0) (2025-12-23)
+
+
+### Features
+
+* add dark/light theme ([#58](https://github.com/stefanBid/sb-template-nuxt/issues/58)) ([e219c02](https://github.com/stefanBid/sb-template-nuxt/commit/e219c027b977ccd6311986e3814f408c9ecce559))
+
 ## [2.0.0](https://github.com/stefanBid/sb-template-nuxt/compare/v1.9.5...v2.0.0) (2025-12-22)
 
 
