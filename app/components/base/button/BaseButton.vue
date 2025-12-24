@@ -35,7 +35,7 @@ const isInteractive = computed(() => {
         : '',
 
       props.variant === 'secondary'
-        ? 'bg-app-surface-2 hover:bg-app-surface border-app-border text-app-contrast'
+        ? 'bg-app-surface hover:bg-app-surface-2 border-app-border text-app-contrast'
         : '',
 
       props.variant === 'outline'
@@ -66,8 +66,8 @@ const isInteractive = computed(() => {
 
       props.variant === 'secondary'
         ? isInteractive
-          ? 'bg-app-surface-2 hover:bg-app-surface border-app-border text-app-contrast'
-          : 'bg-app-surface-2 border-app-border text-app-contrast'
+          ? 'bg-app-surface hover:bg-app-surface-2 border-app-border text-app-contrast'
+          : 'bg-app-surface border-app-border text-app-contrast'
         : '',
 
       props.variant === 'outline'
