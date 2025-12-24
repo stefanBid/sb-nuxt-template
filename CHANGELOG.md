@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.5](https://github.com/stefanBid/sb-template-nuxt/compare/v2.1.4...v2.1.5) (2025-12-24)
+
+
+### Bug Fixes
+
+* update button and chip variants for consistency and improve translations ([#68](https://github.com/stefanBid/sb-template-nuxt/issues/68)) ([1c1760c](https://github.com/stefanBid/sb-template-nuxt/commit/1c1760c475e505bafcacdfeca590a8902387397a))
+
 ## [2.1.4](https://github.com/stefanBid/sb-template-nuxt/compare/v2.1.3...v2.1.4) (2025-12-23)
 
 
