@@ -215,21 +215,21 @@
       },
       "chips": {
         "section-title": "Chips",
-        "accent": {
-          "title": "Accent Chips",
-          "simple": "Accent",
-          "with-icon": "Featured",
-          "featured": "New"
-        },
         "primary": {
           "title": "Primary Chips",
           "simple": "Primary",
-          "with-icon": "Tag",
-          "category": "Saved"
+          "with-icon": "Featured",
+          "featured": "New"
         },
         "secondary": {
           "title": "Secondary Chips",
           "simple": "Secondary",
+          "with-icon": "Tag",
+          "category": "Saved"
+        },
+        "outline": {
+          "title": "Outline Chips",
+          "simple": "Outline",
           "with-icon": "Info",
           "status": "Pending"
         },

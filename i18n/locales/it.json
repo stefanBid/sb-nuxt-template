@@ -215,21 +215,21 @@
       },
       "chips": {
         "section-title": "Chip",
-        "accent": {
-          "title": "Chip Accent",
-          "simple": "Accent",
-          "with-icon": "In evidenza",
-          "featured": "Nuovo"
-        },
         "primary": {
           "title": "Chip Primary",
           "simple": "Primary",
-          "with-icon": "Etichetta",
-          "category": "Salvato"
+          "with-icon": "In evidenza",
+          "featured": "Nuovo"
         },
         "secondary": {
           "title": "Chip Secondary",
           "simple": "Secondary",
+          "with-icon": "Etichetta",
+          "category": "Salvato"
+        },
+        "outline": {
+          "title": "Chip Outline",
+          "simple": "Outline",
           "with-icon": "Info",
           "status": "In attesa"
         },

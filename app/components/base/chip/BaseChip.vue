@@ -2,7 +2,7 @@
 interface BaseChipProps {
   text: string
   icon?: string
-  variant?: 'accent' | 'primary' | 'secondary'
+  variant?: 'primary' | 'secondary' | 'outline'
   clickable?: boolean
   linkable?: {
     href: string
@@ -14,7 +14,7 @@ interface BaseChipProps {
 // Input / Output
 const props = withDefaults(defineProps<BaseChipProps>(), {
   icon: undefined,
-  variant: 'accent',
+  variant: 'primary',
   clickable: false,
   linkable: undefined,
 })
@@ -52,12 +52,12 @@ const onClick = () => {
     :is="componentTag"
     class="inline-flex items-center gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-full u-app-soft-transition"
     :class="{
-      'bg-app-accent text-white': props.variant === 'accent',
-      'bg-app-surface border border-app-border text-app-contrast': props.variant === 'primary',
-      'bg-app-surface-2 border border-app-border text-app-contrast': props.variant === 'secondary',
-      'cursor-pointer hover:scale-105 active:scale-95': isInteractive && props.variant === 'accent',
-      'cursor-pointer hover:bg-app-surface-2 active:bg-app-border': isInteractive && props.variant === 'primary',
-      'cursor-pointer hover:bg-app-border active:opacity-80': isInteractive && props.variant === 'secondary',
+      'bg-app-accent text-white': props.variant === 'primary',
+      'bg-app-surface border border-app-border text-app-contrast': props.variant === 'secondary',
+      'bg-transparent border border-app-accent text-app-accent': props.variant === 'outline',
+      'cursor-pointer hover:scale-105 active:scale-95': isInteractive && props.variant === 'primary',
+      'cursor-pointer hover:bg-app-surface-2 active:bg-app-border': isInteractive && props.variant === 'secondary',
+      'cursor-pointer hover:bg-app-accent hover:text-white active:opacity-90': isInteractive && props.variant === 'outline',
     }"
     :href="props.linkable?.href"
     :rel="props.linkable?.rel"

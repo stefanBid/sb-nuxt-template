@@ -130,7 +130,7 @@ const props = withDefaults(defineProps<TheFooterProps>(), {
               rel: 'noopener noreferrer',
             }"
             text="GitHub"
-            variant="primary"
+            variant="secondary"
           />
 
           <BaseChip
@@ -142,7 +142,7 @@ const props = withDefaults(defineProps<TheFooterProps>(), {
               rel: 'noopener noreferrer',
             }"
             text="LinkedIn"
-            variant="primary"
+            variant="secondary"
           />
 
           <BaseChip
@@ -154,7 +154,7 @@ const props = withDefaults(defineProps<TheFooterProps>(), {
               rel: 'noopener noreferrer',
             }"
             text="Instagram"
-            variant="primary"
+            variant="secondary"
           />
         </div>
       </section>

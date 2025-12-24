@@ -433,29 +433,6 @@ useSeoMeta({
         </h2>
 
         <div class="space-y-8 max-w-4xl">
-          <!-- Accent Chips -->
-          <div class="space-y-4">
-            <h3 class="ty-app-subtitle text-app-contrast">
-              {{ t('pages.home.chips.accent.title') }}
-            </h3>
-            <div class="flex flex-wrap gap-3">
-              <BaseChip
-                :text="t('pages.home.chips.accent.simple')"
-                variant="accent"
-              />
-              <BaseChip
-                icon="lucide:star"
-                :text="t('pages.home.chips.accent.with-icon')"
-                variant="accent"
-              />
-              <BaseChip
-                icon="lucide:zap"
-                :text="t('pages.home.chips.accent.featured')"
-                variant="accent"
-              />
-            </div>
-          </div>
-
           <!-- Primary Chips -->
           <div class="space-y-4">
             <h3 class="ty-app-subtitle text-app-contrast">
@@ -467,13 +444,13 @@ useSeoMeta({
                 variant="primary"
               />
               <BaseChip
-                icon="lucide:tag"
+                icon="lucide:star"
                 :text="t('pages.home.chips.primary.with-icon')"
                 variant="primary"
               />
               <BaseChip
-                icon="lucide:bookmark"
-                :text="t('pages.home.chips.primary.category')"
+                icon="lucide:zap"
+                :text="t('pages.home.chips.primary.featured')"
                 variant="primary"
               />
             </div>
@@ -490,14 +467,37 @@ useSeoMeta({
                 variant="secondary"
               />
               <BaseChip
-                icon="lucide:info"
+                icon="lucide:tag"
                 :text="t('pages.home.chips.secondary.with-icon')"
                 variant="secondary"
               />
               <BaseChip
-                icon="lucide:clock"
-                :text="t('pages.home.chips.secondary.status')"
+                icon="lucide:bookmark"
+                :text="t('pages.home.chips.secondary.category')"
                 variant="secondary"
+              />
+            </div>
+          </div>
+
+          <!-- Outline Chips -->
+          <div class="space-y-4">
+            <h3 class="ty-app-subtitle text-app-contrast">
+              {{ t('pages.home.chips.outline.title') }}
+            </h3>
+            <div class="flex flex-wrap gap-3">
+              <BaseChip
+                :text="t('pages.home.chips.outline.simple')"
+                variant="outline"
+              />
+              <BaseChip
+                icon="lucide:info"
+                :text="t('pages.home.chips.outline.with-icon')"
+                variant="outline"
+              />
+              <BaseChip
+                icon="lucide:clock"
+                :text="t('pages.home.chips.outline.status')"
+                variant="outline"
               />
             </div>
           </div>
@@ -514,10 +514,10 @@ useSeoMeta({
                   {{ t('pages.home.chips.use-cases.tags-label') }}
                 </p>
                 <div class="flex flex-wrap gap-2">
-                  <BaseChip icon="lucide:code" text="Vue.js" variant="accent" />
-                  <BaseChip icon="lucide:code" text="Nuxt" variant="accent" />
-                  <BaseChip icon="lucide:code" text="TypeScript" variant="accent" />
-                  <BaseChip icon="lucide:code" text="Tailwind" variant="accent" />
+                  <BaseChip icon="lucide:code" text="Vue.js" variant="primary" />
+                  <BaseChip icon="lucide:code" text="Nuxt" variant="primary" />
+                  <BaseChip icon="lucide:code" text="TypeScript" variant="primary" />
+                  <BaseChip icon="lucide:code" text="Tailwind" variant="primary" />
                 </div>
               </div>
 
@@ -527,9 +527,9 @@ useSeoMeta({
                   {{ t('pages.home.chips.use-cases.status-label') }}
                 </p>
                 <div class="flex flex-wrap gap-2">
-                  <BaseChip icon="lucide:check-circle" :text="t('pages.home.chips.use-cases.active')" variant="accent" />
+                  <BaseChip icon="lucide:check-circle" :text="t('pages.home.chips.use-cases.active')" variant="primary" />
                   <BaseChip icon="lucide:clock" :text="t('pages.home.chips.use-cases.pending')" variant="secondary" />
-                  <BaseChip icon="lucide:alert-circle" :text="t('pages.home.chips.use-cases.warning')" variant="primary" />
+                  <BaseChip icon="lucide:alert-circle" :text="t('pages.home.chips.use-cases.warning')" variant="outline" />
                 </div>
               </div>
 
@@ -553,9 +553,9 @@ useSeoMeta({
                 <div class="flex flex-wrap gap-2">
                   <BaseChip
                     :clickable="true"
-                    text="Click me (Accent)"
-                    variant="accent"
-                    @chip-click="() => handleChipClick('Accent Chip')"
+                    text="Click me (Primary)"
+                    variant="primary"
+                    @chip-click="() => handleChipClick('Primary Chip')"
                   />
                   <BaseChip
                     :clickable="true"
@@ -598,7 +598,7 @@ useSeoMeta({
                       rel: 'noopener noreferrer',
                     }"
                     text="Documentation"
-                    variant="accent"
+                    variant="outline"
                   />
                   <BaseChip
                     icon="lucide:mail"
